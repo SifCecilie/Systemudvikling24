@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cykelpleje</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        /* Gør alle linksene mere gennemsigtigt når musen kører over det */
+        a:hover {
+            opacity: 0.6;
+        }
+
+        /* Area med tips  */
+        body article {
+            grid-template-areas:
+                'hd hd hd hd hd hd hd hd'
+                'fi fi fi fi fi fi fi fi'
+                'sk sk sk sk sk as as as';
+            display: grid;
+            background-color: #706efa;
+            max-width: 60%;
+            margin: -5% auto 3% auto;
+            padding-bottom: 5%;
+        }
+
+        body figure {
+            grid-area: fi;
+            width: 90%;
+            margin: auto;
+        }
+
+        /* Overskriften i article */
+        article header {
+            grid-area: hd;
+            background-color: #706efacb;
+            text-align: center;
+            padding-top: 4%;
+            font-size: 120%;
+            font-weight: bold;
+            color: aliceblue;
+        }
+
+        /* brødteksten i article */
+        article section {
+            grid-area: sk;
+            background-color: #706efa;
+            width: 90%;
+            font-weight: lighter;
+            margin: auto;
+            text-align: left;
+            font-size: larger;
+        }
+
+        article section p {
+            text-align: justify;
+        }
+
+        /* MainConatiner i main elementet (container for subpages information*/
+        #mainContainer {
+            display: grid;
+            grid-template-columns: auto auto;
+            row-gap: 3%;
+            padding-bottom: 30%;
+            padding-top: 8%;
+            width: 100%;
+            background-color: rgba(235, 235, 64, 0.507);
+        }
+
+        /* teksten og billederne i mainContainer */
+        #grid-item1,
+        #grid-item2,
+        #grid-item3,
+        #grid-item4,
+        #grid-item5,
+        #grid-item6,
+        #grid-item7,
+        #grid-item8 {
+            text-align: center;
+            margin: auto;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        /* Underoverskrifter for de forskellige subpages */
+        h3 {
+            text-align: left;
+            padding-bottom: 5%;
+            font-size: 115%;
+        }
+
+        /* Brødtekst til subpages */
+        main p {
+            font-size: 70%;
+        }
+
+        #articleBox {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            width: 100%;
+        }
+
+
+        @media screen and (max-width:1115px) {
+
+            * {
+                font-size: 85%;
+            }
+
+            body article {
+                max-width: 85%;
+            }
+
+            main {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:640px) {
+
+            body article header {
+                font-size: 150%;
+            }
+
+            body article {
+                margin-top: 2%;
+            }
+
+
+            article aside {
+                display: none;
+            }
+
+            #grid-item2,
+            #grid-item3,
+            #grid-item6,
+            #grid-item7 {
+                display: none;
+            }
+
+            #mainContainer {
+                display: block;
+                background-color: rgba(235, 235, 64, 0.507);
+                padding-bottom: 5%;
+
+            }
+
+            #grid-item1,
+            #grid-item4,
+            #grid-item5,
+            #grid-item8,
+            p {
+                margin-bottom: 7%;
+            }
+
+            #aside2 {
+                width: 50%;
+                display: block;
+                margin-bottom: 7%;
+            }
+
+            body main h1 {
+                font-size: 100%;
+            }
+
+            figure img {
+                grid-area: fi;
+                width: 90%;
+                margin: auto;
+                padding-top: 20%;
+            }
+        }
+
+
+        @media screen and (max-width:400px) {
+
+            * {
+                width: 99%;
+                font-size: 90%;
+            }
+
+            figure img {
+                grid-area: fi;
+                width: 90%;
+                margin: auto;
+                padding-top: 85%;
+            }
+
+            body article {
+                max-width: 95%;
+                margin-top: 4%;
+                font-size: 120%;
+            }
+
+            body article p {
+                text-align: center;
+                /* font-size: 110%; */
+            }
+
+            body article h5 {
+                text-align: center;
+            }
+
+            article aside {
+                display: none;
+            }
+
+            main {
+                width: 100%;
+            }
+
+            #grid-item1,
+            #grid-item4,
+            #grid-item5,
+            #grid-item8,
+            p {
+                text-align: center;
+            }
+
+            #grid-item2,
+            #grid-item3,
+            #grid-item6,
+            #grid-item7 {
+                display: none;
+            }
+
+            #mainContainer {
+                display: block;
+                background-color: rgba(235, 235, 64, 0.507);
+
+            }
+
+            main h3 {
+                padding-top: 10%;
+                text-align: center;
+            }
+
+            main header h1 {
+                font-size: 100%;
+            }
+
+        }
+
+        main h2 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding-top: 10%;
+            padding-bottom: 3%;
+        }
+        @media screen and (max-width:400px) {
+
+            * {
+                width: 100%;
+                font-size: 80%;
+            }
+
+            #productBoxWinter {
+                display: inline-block;
+                color: aliceblue;
+                margin-bottom: 20%;
+                padding-left: 6%;
+                padding: 6%;
+
+            }
+
+            body article section {
+                grid-area: sk;
+                background-color: #0fcf29da;
+                color: aliceblue;
+                font-size: 1.3rem;
+                margin-top: 68%;
+                font-size: 200%;
+                width: 90%;
+            }
+
+
+            article aside {
+                display: none;
+            }
+
+            body main {
+                width: 100%;
+            }
+
+            main header h1 {
+                font-size: 110%;
+                margin-bottom: 9%;
+            }
+
+            main div p {
+                text-align: center;
+                padding-bottom: 8%;
+                font-size: 100%;
+            }
+
+            #artikel {
+                display: none;
+            }
+        }
+
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+        // kalder på navbar og footer 
+        $(document).ready(function () {
+            $('#hovedmenu').load("nav.html");
+            $('#kontakt').load("footer.html");
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav id="hovedmenu"> <!-- Navigationsbar -->
+        </nav>
+    </header>
+    <figure>
+        <img id="mainPic" src="images/mainPic.jpg" alt="man biking in mountains" class="center" />
+    </figure>
+    <article>
+        <header>
+            <h1>
+                Hjemmesiden navn og lidt andet
+            </h1>
+            <h2 style="font-size: smaller;">
+                Et eller andet 
+            </h2>
+            <hr style="width: 80%; margin-left: 10%; margin-top: 3.5%; margin-bottom: 3.5%;">
+            <!-- horisontal linje, adskiller header og section/aside -->
+        </header>
+        <section>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum placeat exercitationem earum corrupti minima quia, sequi debitis perspiciatis amet sed, ullam totam. Placeat praesentium quasi, dolorum tempore vero quis provident!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus voluptates tenetur dignissimos, animi eaque officiis illo quisquam. Suscipit error temporibus tenetur aperiam distinctio. Architecto quasi maxime eligendi fugiat consectetur excepturi.            
+            </p>
+            <br>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, rerum illo temporibus eius doloribus ratione omnis ea vero reprehenderit assumenda vitae harum eveniet ullam quisquam praesentium at cupiditate quidem nulla!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, rerum illo temporibus eius doloribus ratione omnis ea vero reprehenderit assumenda vitae harum eveniet ullam quisquam praesentium at cupiditate quidem nulla!
+            </p>
+
+        </section>
+        <aside>
+
+        </aside>
+    </article>
+    <hr style="width: 80%; margin: auto; margin-bottom: 3%; border: 1px dashed black">
+    <main>
+        <header>
+            <h1>
+                Skriv et eller andet smart her
+            </h1>
+        </header>
+        <div id="mainContainer">
+            <div id="grid-item1">
+                <a href="vinter.html"> <!-- Link til der fører til en subpage -->
+                    <h3>
+                        Noget om den subpage1
+                    </h3>
+                </a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore quod asperiores placeat iure in molestiae blanditiis excepturi, pariatur veniam dolorem, alias mollitia facilis vero voluptatem ipsum exercitationem? Nisi, laudantium?
+                
+                </p>
+            </div>
+            <div id="grid-item2">
+                <a href="vinter.html"><img src="images/replace.jpg" alt="cykel der kører i sne" class="center"></a> <!-- Link til der fører til en subpage og relevant billede (toppen til højre, høre til subpage 1)-->
+            </div>
+
+            <div id="grid-item3">
+                <a href="produkter.html"><img src="images/replace.jpg" alt="produkter til cyklen" 
+                        class="center"></a> <!-- Link til der fører til en subpage og relevant billede (row 2 column 1)-->
+            </div>
+            <div id="grid-item4">
+                <a href="produkter.html"> <!-- Link til der fører til en subpage (subpage 2) -->
+                    <h3>
+                        Noget om den subpage2
+                    </h3>
+                </a>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quam iste molestiae perferendis, nesciunt ratione autem recusandae aperiam facere excepturi voluptas, iure hic ut accusamus, quae rem consequuntur consectetur possimus.
+                </p>
+            </div>
+            <div id="grid-item5">
+                <a href="tutorial.html"> <!-- Link der fører til en subpage (subpage 3) -->
+                    <h3>
+                        Noget om subpage 3
+                    </h3>
+                </a>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, officiis, architecto, adipisci dolor quisquam at itaque alias laudantium voluptatem laboriosam omnis iste ratione! Perferendis velit laborum labore, molestiae alias ea?
+                </p>
+            </div>
+            <div id="grid-item6">
+                <a href="tutorial.html"><img src="images/replace.jpg" alt="video med playbutton"
+                        class="center"></a> <!-- Link der fører til en subpage og relevant billede (row 3 column 2)-->
+            </div>
+            <div id="grid-item7">
+                <a href="kontakt.html"><img src="images/replace.jpg" alt="spørgsmålstegn" class="center"></a> <!-- Link der fører til en subpage og relevant billede (row 4 column 1)-->
+            </div>
+            <div id="grid-item8">
+                <a href="kontakt.html"> <!--relevant link (subpage 4)-->
+                    <h3>
+                        Noget om subpage 4
+                    </h3>
+                </a>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae voluptatibus quis, nostrum ab quaerat quam nesciunt cumque possimus rem accusamus excepturi, id totam recusandae reiciendis vitae, suscipit corporis. Exercitationem, provident?
+                </p>
+            </div>
+        </div>
+        <h2>Relevante artikler</h2>
+        <div id="articleBox">
+            <div id=01 class="grow">
+                <img src="images/replace.jpg" alt="something" class="artikel">
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorum dolores veniam voluptatem est impedit eos perspiciatis deserunt beatae. Laboriosam aspernatur minima quod nisi consequatur maiores nostrum reprehenderit illum pariatur?
+            </div>
+            <div id=02 class="grow">
+                <img src="images/replace.jpg" alt="something" class="artikel">
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde numquam odit dolor! Impedit nisi repellat recusandae maxime, ipsam sed sit dignissimos temporibus vero esse unde exercitationem sunt tempora, autem quis.vs på metal, plastik og gummi. En biologisk nedbrydelig formel.
+                </p>
+            </div>
+            <div id=03 class="grow">
+                <img src="images/replace.jpg" alt="something" class="artikel">
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima blanditiis aut beatae autem, consectetur amet molestias tempore, odit, asperiores veritatis aliquam iure? Nobis laboriosam natus, autem voluptatum vel vitae minima!
+                </p>
+            </div>
+        </div>
+    </main>
+    <br>
+    <div id="up">
+        <a href="#Top" style="background-color:  rgb(255, 166, 0);">Til toppen</a>
+    </div>
+    <br>
+    <footer>
+        <address id="kontakt">
+        </address>
+    </footer>
