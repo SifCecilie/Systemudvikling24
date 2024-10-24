@@ -1,6 +1,6 @@
 * {
-   font-family: 'Times New Roman', Times, serif;
-   letter-spacing: 1px;
+   font-family: 'arial';
+   letter-spacing: 3px;
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
 main {
    margin: auto;
    text-align: center;
-   width: 85%;
+   width: 100%;
    padding: 3%;
    font-size: 2rem;
 
@@ -36,10 +36,10 @@ p {
 nav ul {
    /* box-shadow: 0px 10px 30px rgba(213, 209, 209); */
    padding: 18px;
-   text-align: center;
+   text-align: right;
    position: absolute;
-   margin: auto;
    width: 100%;
+   background-color: #7d9b76;
 }
 
 nav ul li {
@@ -48,22 +48,20 @@ nav ul li {
 
 nav ul li a {
    display: block;
-   color: rgb(0, 0, 0);
+   color: white;
    font-weight: 400;
    font-size: 1.2rem;
    padding: 14px 50px;
    text-decoration: none;
-   border-style: outset;
 }
 
 a {
-   background-color: rgb(255, 255, 255);
    color: blue;
    text-decoration: none;
 }
 
 a:hover {
-   background-color: rgb(41, 156, 194);
+   color: rgb(41, 156, 194);
 }
 
 

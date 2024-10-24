@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cykelpleje</title>
+    <title>MachuWay</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <style>
         /* Gør alle linksene mere gennemsigtigt når musen kører over det */
@@ -14,48 +14,38 @@
 
         /* Area med tips  */
         body article {
-            grid-template-areas:
-                'hd hd hd hd hd hd hd hd'
-                'fi fi fi fi fi fi fi fi'
-                'sk sk sk sk sk as as as';
-            display: grid;
-            background-color: #706efa;
-            max-width: 60%;
-            margin: -5% auto 3% auto;
-            padding-bottom: 5%;
+            background-color: white;
+            width: 100%;
+            padding: 60px;
         }
 
         body figure {
-            grid-area: fi;
-            width: 90%;
+            width: 100%;
             margin: auto;
         }
 
         /* Overskriften i article */
         article header {
-            grid-area: hd;
-            background-color: #706efacb;
             text-align: center;
             padding-top: 4%;
             font-size: 120%;
             font-weight: bold;
-            color: aliceblue;
         }
 
         /* brødteksten i article */
         article section {
-            grid-area: sk;
-            background-color: #706efa;
-            width: 90%;
+            width: 100%;
             font-weight: lighter;
             margin: auto;
-            text-align: left;
-            font-size: larger;
+            text-align: center;
+            font-size: 16px;
         }
 
         article section p {
             text-align: justify;
+            text-align: center;
         }
+
 
         /* MainConatiner i main elementet (container for subpages information*/
         #mainContainer {
@@ -109,7 +99,7 @@
             }
 
             body article {
-                max-width: 85%;
+                max-width: 100%;
             }
 
             main {
@@ -318,36 +308,22 @@
         <nav id="hovedmenu"> <!-- Navigationsbar -->
         </nav>
     </header>
-    <figure>
-        <img id="mainPic" src="images/homepage background.jpg" alt="man biking in mountains" class="center" />
-    </figure>
+    <div id="banner">
+        <figure>
+            <img id="mainPic" src="images/homepage background.jpg" alt="man biking in mountains" class="center" />
+        </figure>
+        <h1 style="margin: -250px 0 160px 0; text-align: center; font-size: 60px; color: white; font-weight: lighter;">MachuWay</h1>
+        <p style="margin: -150px 0 140px 0; text-align: center; font-size: 18px; color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
     <article>
         <header>
-            <h1>
-                Vi prøver igen vennerne
-            </h1>
-            <h2 style="font-size: smaller;">
-                Et eller andet frank hej
-            </h2>
-            <hr style="width: 80%; margin-left: 10%; margin-top: 3.5%; margin-bottom: 3.5%;">
+            <h1 style="padding-bottom: 40px;">Information about page...</h1>
             <!-- horisontal linje, adskiller header og section/aside -->
         </header>
         <section>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum placeat exercitationem earum corrupti minima quia, sequi debitis perspiciatis amet sed, ullam totam. Placeat praesentium quasi, dolorum tempore vero quis provident!
             </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus voluptates tenetur dignissimos, animi eaque officiis illo quisquam. Suscipit error temporibus tenetur aperiam distinctio. Architecto quasi maxime eligendi fugiat consectetur excepturi.            
-            </p>
-            <br>
-            <br>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, rerum illo temporibus eius doloribus ratione omnis ea vero reprehenderit assumenda vitae harum eveniet ullam quisquam praesentium at cupiditate quidem nulla!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, rerum illo temporibus eius doloribus ratione omnis ea vero reprehenderit assumenda vitae harum eveniet ullam quisquam praesentium at cupiditate quidem nulla!
-            </p>
-
         </section>
         <aside>
 
