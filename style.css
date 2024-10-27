@@ -7,7 +7,6 @@
 }
 
 body {
-   background-color: whitesmoke;
    font-size: large;
 }
 
@@ -15,9 +14,7 @@ main {
    margin: auto;
    text-align: center;
    width: 100%;
-   padding: 3%;
    font-size: 2rem;
-
 }
 
 #hovedmenu {
@@ -28,8 +25,14 @@ main {
 p {
    text-align: left;
 }
+.grid_p {
+   width: 70%;
+}
 
-
+.grid_p_left {
+   width: 95%;
+   padding: 0 0 0 25%;
+}
 
 
 /* Navigationsbaren */
