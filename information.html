@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MachuWay</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+        // kalder på navbar og footer 
+        $(document).ready(function () {
+            $('#hovedmenu').load("nav.html");
+            $('#kontakt').load("footer.html");
+        });
+
+    </script>
+</head>
+<body>
+    <header>
+        <nav id="hovedmenu"> <!-- Navigationsbar -->
+        </nav>
+    </header>
+</body>
+<br>
+<div id="up">
+    <a href="#Top" style="background-color:  rgb(255, 166, 0);">Til toppen</a>
+</div>
+<br>
+<footer>
+    <address id="kontakt">
+    </address>
+</footer>

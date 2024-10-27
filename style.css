@@ -36,7 +36,7 @@ p {
 nav ul {
    /* box-shadow: 0px 10px 30px rgba(213, 209, 209); */
    padding: 18px;
-   text-align: right;
+   text-align: center;
    position: absolute;
    width: 100%;
    background-color: #7d9b76;
@@ -61,7 +61,7 @@ a {
 }
 
 a:hover {
-   color: rgb(41, 156, 194);
+   color: rgb(250, 246, 222);
 }
 
 
