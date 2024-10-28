@@ -14,7 +14,6 @@
 
         /* Area med tips  */
         body article {
-            background-color: white;
             width: 100%;
             padding: 60px;
         }
@@ -51,7 +50,6 @@
         #mainContainer {
             display: grid;
             grid-template-columns: auto auto;
-            padding-bottom: 10%;
             width: 100%;
         }
 
@@ -99,15 +97,30 @@
 
         }
 
+        main h2 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding-bottom: 3%;
+        }
+
         /* Brødtekst til subpages */
         main p {
             font-size: 70%;
         }
 
+        #articleBoxMain {
+            background-color: #457d58;
+            padding: 5%;
+        }
         #articleBox {
             display: grid;
             grid-template-columns: auto auto auto;
             width: 100%;
+        }
+
+        #articleBox p {
+            padding: 5% 8% 5% 8%;
+            font-size: 18px;
         }
 
 
@@ -150,7 +163,6 @@
 
             #mainContainer {
                 display: block;
-                background-color: rgba(235, 235, 64, 0.507);
                 padding-bottom: 5%;
 
             }
@@ -236,7 +248,6 @@
 
             #mainContainer {
                 display: block;
-                background-color: rgba(235, 235, 64, 0.507);
 
             }
 
@@ -251,12 +262,6 @@
 
         }
 
-        main h2 {
-            color: rgb(0, 0, 0);
-            text-align: center;
-            padding-top: 10%;
-            padding-bottom: 3%;
-        }
         @media screen and (max-width:400px) {
 
             * {
@@ -408,35 +413,36 @@
                 <a href="faq.html"><img src="images/FAQ.avif" alt="spørgsmålstegn" class="center" style="height: 550px; width: 700px; object-fit: cover; float: right;"></a> <!-- Link der fører til en subpage og relevant billede (row 4 column 1)-->
             </div>
         </div>
-        <h2>Relevante artikler</h2>
-        <div id="articleBox">
-            <div id=01 class="grow">
-                <img src="images/replace.jpg" alt="something" class="artikel">
-                <br>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorum dolores veniam voluptatem est impedit eos perspiciatis deserunt beatae. Laboriosam aspernatur minima quod nisi consequatur maiores nostrum reprehenderit illum pariatur?
-            </div>
-            <div id=02 class="grow">
-                <img src="images/replace.jpg" alt="something" class="artikel">
-                <br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde numquam odit dolor! Impedit nisi repellat recusandae maxime, ipsam sed sit dignissimos temporibus vero esse unde exercitationem sunt tempora, autem quis.vs på metal, plastik og gummi. En biologisk nedbrydelig formel.
-                </p>
-            </div>
-            <div id=03 class="grow">
-                <img src="images/replace.jpg" alt="something" class="artikel">
-                <br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima blanditiis aut beatae autem, consectetur amet molestias tempore, odit, asperiores veritatis aliquam iure? Nobis laboriosam natus, autem voluptatum vel vitae minima!
-                </p>
-            </div>
+        <div id="articleBoxMain">
+            <h2>Relevante artikler</h2>
+                    <div id="articleBox">
+                        <div id=01 class="grow">
+                            <img src="images/replace.jpg" alt="something" class="artikel">
+                            <br>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorum dolores veniam voluptatem est impedit eos perspiciatis deserunt beatae. Laboriosam aspernatur minima quod nisi consequatur maiores nostrum reprehenderit illum pariatur?
+                        </div>
+                        <div id=02 class="grow">
+                            <img src="images/replace.jpg" alt="something" class="artikel">
+                            <br>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde numquam odit dolor! Impedit nisi repellat recusandae maxime, ipsam sed sit dignissimos temporibus vero esse unde exercitationem sunt tempora, autem quis.vs på metal, plastik og gummi. En biologisk nedbrydelig formel.
+                            </p>
+                        </div>
+                        <div id=03 class="grow">
+                            <img src="images/replace.jpg" alt="something" class="artikel">
+                            <br>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima blanditiis aut beatae autem, consectetur amet molestias tempore, odit, asperiores veritatis aliquam iure? Nobis laboriosam natus, autem voluptatum vel vitae minima!
+                            </p>
+                        </div>
+                    </div>
         </div>
+        
     </main>
-    <br>
-    <div id="up">
-        <a href="#Top" style="background-color:  rgb(255, 166, 0);">Til toppen</a>
-    </div>
-    <br>
     <footer>
+        <div id="up">
+            <a href="#Top">Til toppen</a>
+        </div>
         <address id="kontakt">
         </address>
     </footer>

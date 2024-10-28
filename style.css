@@ -4,6 +4,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   scroll-behavior: smooth;
 }
 
 body {
@@ -71,9 +72,9 @@ a:hover {
 
 /* Bunden af dokumentet */
 footer {
-   background-color: #1a5fdf8f;
+   background-color: #272727;
    padding: 3%;
-   padding-bottom: 7%;
+   height: 250px;
 }
 
 #kontakt {
@@ -89,13 +90,17 @@ footer {
 }
 
 #up {
-   display: inline;
    width: 100px;
    text-align: center;
    padding: 10px;
    margin-left: 20px;
-   background-color: rgb(255, 166, 0);
+   margin-top: -5%;
+   background-color: rgb(255, 255, 255);
    float: left;
+}
+
+#up a {
+   color: #272727;
 }
 
 
