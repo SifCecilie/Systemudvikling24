@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/lvx6fng.css">
     <title>MachuWay</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <style>
@@ -26,15 +30,11 @@
         /* Overskriften i article */
         article header {
             text-align: center;
-            padding-top: 4%;
-            font-size: 120%;
-            font-weight: bold;
         }
 
         /* brødteksten i article */
         article section {
             width: 100%;
-            font-weight: lighter;
             margin: auto;
             text-align: center;
             font-size: 16px;
@@ -47,7 +47,14 @@
 
 
         /* MainConatiner i main elementet (container for subpages information*/
-        #mainContainer {
+        .shadow {
+            display: grid;
+            grid-template-columns: auto auto;
+            width: 100%;
+            filter: drop-shadow(1px 1px 15px #424242);
+        }
+
+        .noshadow {
             display: grid;
             grid-template-columns: auto auto;
             width: 100%;
@@ -82,23 +89,32 @@
             background-color: #7d9b76;
         }
 
+        h1 {
+           padding-bottom: 60px;
+           color: #272727;
+           font-size: 38px;
+        }
+
         /* Underoverskrifter for de forskellige subpages */
         h3 {
             text-align: left;
-            padding: 10% 0 7% 0;
-            font-size: 115%;
+            padding: 10% 0 5% 10%;
+            font-size: 38px;
+            font-family: 'barlow';
+            color: #272727;
         }
 
         .h3_left {
             text-align: left;
-            padding: 10% 0 7% 25%;
-            font-size: 115%;
-            color: rgb(0, 0, 0);
+            padding: 10% 0 5% 20%;
+            font-size: 38px;
+            color: #272727;
+            font-family: 'barlow';
 
         }
 
         main h2 {
-            color: rgb(0, 0, 0);
+            color: #272727;
             text-align: center;
             padding-bottom: 3%;
         }
@@ -336,12 +352,12 @@
         <figure>
             <img id="mainPic" src="images/homepage background.jpg" alt="man biking in mountains" class="center" style="height: 600px;"/>
         </figure>
-        <h1 style="margin: -350px 0 160px 0; text-align: center; font-size: 80px; color: white; font-weight: lighter;">MachuWay</h1>
-        <p style="margin: -150px 0 140px 0; text-align: center; font-size: 24px; color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <h1 style="margin: -330px 0 160px 0; text-align: center; font-size: 80px; color: white; font-family: 'barlow'; font-weight: 200; font-style: normal">MachuWay</h1>
+        <p style="margin: -190px 0 140px 0; text-align: center; font-size: 24px; color: white; font-style: italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
     </div>
     <article style="padding: 100px 0 100px 0;">
         <header>
-            <h1 style="padding-bottom: 60px;">Information about page...</h1>
+            <h1>Information about page...</h1>
         </header>
         <section>
             <p style="margin: 0 22% 0 22%;">
@@ -354,21 +370,24 @@
     </article>
     <main>
         <div id="mainContainer">
-            <div id="grid-item1">
-                <a href="information.html"><img src="images/information.avif" alt="Kvinde der ser over machu picchu" class="center" style="height: 550px; width: 700px; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (toppen til højre, høre til subpage 1)-->
+            <div class="shadow">
+                <div id="grid-item1">
+                    <a href="information.html"><img src="images/information.avif" alt="Kvinde der ser over machu picchu" class="center" style="height: 550px; width: 700px; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (toppen til højre, høre til subpage 1)-->
+                </div>
+                <div id="grid-item2">
+                    <a href="information.html"><!-- Link til der fører til en subpage -->
+                        <h3>
+                            General Information
+                        </h3>
+                    </a>
+                    <p class="grid_p">
+                        Discover all the essential information you need to plan your hiking adventure in the stunning landscapes of Machu Picchu. Here you can find information about historical and cultural points of interest and learn about the best seasons to visit, local customs, and other useful details to make your planning experience as smooth as possible.
+                    </p>
+                </div>   
             </div>
-            <div id="grid-item2">
-                <a href="information.html"><!-- Link til der fører til en subpage -->
-                    <h3>
-                        General Information
-                    </h3>
-                </a>
-                <p class="grid_p">
-                    Discover all the essential information you need to plan your hiking adventure in the stunning landscapes of Machu Picchu. Here you can find information about historical and cultural points of interest and learn about the best seasons to visit, local customs, and other useful details to make your planning experience as smooth as possible.
-                </p>
-            </div>
-
-            <div id="grid-item3">
+            
+            <div class="noshadow">
+                <div id="grid-item3">
                 <a href="checklist.html"> <!-- Link til der fører til en subpage (subpage 2) -->
                     <h3 class="h3_left">
                         Checklist and map
@@ -377,59 +396,64 @@
                 <p class="grid_p_left">
                     Plan your hiking route with our interactive map of the hiking trails and surrounding area, to map out your hike and stay aware of nearby interesting locations. Here you will also find a nifty customizable checklist where you will be given some recommendations of what to bring for your trip.
                 </p>
+                </div>
+
+                <div id="grid-item4">
+                    <a href="checklist.html"><img src="images/checklist and map.avif" alt="produkter til cyklen" class="center" style="height: 550px; width: 700px; object-fit: cover; float: right;"></a> <!-- Link til der fører til en subpage og relevant billede (row 2 column 1)-->
+                </div>
             </div>
 
-            <div id="grid-item4">
-                <a href="checklist.html"><img src="images/checklist and map.avif" alt="produkter til cyklen" class="center" style="height: 550px; width: 700px; object-fit: cover; float: right;"></a> <!-- Link til der fører til en subpage og relevant billede (row 2 column 1)-->
-            </div>
-
-            <div id="grid-item5">
+            <div class="shadow">
+                 <div id="grid-item5">
                 <a href="tipstricks.html"><img src="images/tips and tricks.avif" alt="video med playbutton" class="center" style="height: 550px; width: 700px; object-fit: cover; float: left;"></a> <!-- Link der fører til en subpage og relevant billede (row 3 column 2)-->
-            </div>
+                </div>
 
-            <div id="grid-item6">
-                 <a href="tipstricks.html"> <!-- Link der fører til en subpage (subpage 3) -->
-                    <h3>
-                        Tips and tricks
-                    </h3>
-                </a>
-                <p class="grid_p">
-                    Look through our collection of tips and tricks that may better prepare you for the planning. Find tips about how to pack, good hiking advice and other useful tricks that might come in handy.
-                </p>
+                <div id="grid-item6">
+                    <a href="tipstricks.html"> <!-- Link der fører til en subpage (subpage 3) -->
+                        <h3>
+                            Tips and tricks
+                        </h3>
+                    </a>
+                    <p class="grid_p">
+                        Look through our collection of tips and tricks that may better prepare you for the planning. Find tips about how to pack, good hiking advice and other useful tricks that might come in handy.
+                    </p>
+                </div>
             </div>
+           
+            <div class="noshadow">
+                <div id="grid-item7">
+                    <a href="faq.html"><!--relevant link (subpage 4)-->
+                        <h3 class="h3_left">
+                            FAQ
+                        </h3>
+                    </a>
+                    <p class="grid_p_left">
+                        Here you can find and look trough all of our most frequently asked questions. This FAQ page has you covered with helpful insights and practical information to make your journey stress-free.
+                    </p>
+                </div>
 
-            <div id="grid-item7">
-                <a href="faq.html"></a><!--relevant link (subpage 4)-->
-                    <h3 class="h3_left">
-                         FAQ
-                    </h3>
-                </a>
-                <p class="grid_p_left">
-                     Here you can find and look trough all of our most frequently asked questions. This FAQ page has you covered with helpful insights and practical information to make your journey stress-free.
-                </p>
-            </div>
-
-            <div id="grid-item8">
-                <a href="faq.html"><img src="images/FAQ.avif" alt="spørgsmålstegn" class="center" style="height: 550px; width: 700px; object-fit: cover; float: right;"></a> <!-- Link der fører til en subpage og relevant billede (row 4 column 1)-->
+                <div id="grid-item8">
+                    <a href="faq.html"><img src="images/FAQ.avif" alt="spørgsmålstegn" class="center" style="height: 550px; width: 700px; object-fit: cover; float: right;"></a> <!-- Link der fører til en subpage og relevant billede (row 4 column 1)-->
+                </div>
             </div>
         </div>
         <div id="articleBoxMain">
-            <h2>Relevante artikler</h2>
-                    <div id="articleBox">
-                        <div id=01 class="grow">
-                            <img src="images/replace.jpg" alt="something" class="artikel">
+            <h1>Relevante artikler</h1>
+                    <div id="articleBox" style="width: 100%;">
+                        <div id=01 class="grow" >
+                            <img src="images/replace.jpg" alt="something" class="artikel" style="width: 90%;">
                             <br>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorum dolores veniam voluptatem est impedit eos perspiciatis deserunt beatae. Laboriosam aspernatur minima quod nisi consequatur maiores nostrum reprehenderit illum pariatur?
                         </div>
                         <div id=02 class="grow">
-                            <img src="images/replace.jpg" alt="something" class="artikel">
+                            <img src="images/replace.jpg" alt="something" class="artikel" style="width: 90%;">
                             <br>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde numquam odit dolor! Impedit nisi repellat recusandae maxime, ipsam sed sit dignissimos temporibus vero esse unde exercitationem sunt tempora, autem quis.vs på metal, plastik og gummi. En biologisk nedbrydelig formel.
                             </p>
                         </div>
                         <div id=03 class="grow">
-                            <img src="images/replace.jpg" alt="something" class="artikel">
+                            <img src="images/replace.jpg" alt="something" class="artikel" style="width: 90%;">
                             <br>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima blanditiis aut beatae autem, consectetur amet molestias tempore, odit, asperiores veritatis aliquam iure? Nobis laboriosam natus, autem voluptatum vel vitae minima!
