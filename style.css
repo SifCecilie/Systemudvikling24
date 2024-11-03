@@ -32,12 +32,12 @@ p {
 .grid_p {
    width: 70%;
    color: #272727;
-   padding-left: 10%;
+   padding: 0 0 10% 10%;
 }
 
 .grid_p_left {
    width: 90%;
-   padding: 0 0 0 20%;
+   padding: 0 0 10% 20%;
    color: #272727;
 }
 
@@ -128,7 +128,7 @@ main h5 {
 /*Hvis skærmen er mindre en 800px, så bliver baggrundsfarven gul*/
 @media screen and (max-width:800px) {}
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1230px) {
    nav {
       width: 100%;
    }

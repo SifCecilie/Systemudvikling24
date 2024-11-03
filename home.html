@@ -70,7 +70,6 @@
         #grid-item7,
         #grid-item8 {
             text-align: center;
-            height: 550px;
 
         }
 
@@ -87,6 +86,28 @@
         #grid-item5,
         #grid-item6 {
             background-color: #7d9b76;
+        }
+
+        #h1banner {
+            margin: -330px 0 160px 0;
+            text-align: center;
+            font-size: 80px;
+            color:white;
+            font-family: 'barlow';
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        #pbanner {
+            margin: -190px 0 140px 0;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            font-style: italic;
+        }
+
+        #infop {
+            margin: 0 22% 0 22%;
         }
 
         h1 {
@@ -139,12 +160,47 @@
             font-size: 18px;
         }
 
+        #mainPic {
+                height: 600px;
+            }
+
 
         @media screen and (max-width:1115px) {
 
             * {
-                font-size: 85%;
+                font-size: 90%;
             }
+
+            #h1banner{
+                font-size: 64px;
+                margin: -230px 0 160px 0;
+            }
+
+            #pbanner{
+                font-size: 18px;
+                margin: -190px 0 70px 0;
+            }
+
+            #infop {
+            margin: 0 16% 0 16%;
+            }
+
+            .grid_p {
+                width: 85%;
+            }
+
+            #mainPic {
+                height: 400px;
+            }
+
+            #articleBox p {
+                font-size: 75%;
+            }
+
+            h1, h3, .h3_left{
+                font-size: 24px;
+            }
+
 
             body article {
                 max-width: 100%;
@@ -350,17 +406,17 @@
     </header>
     <div id="banner">
         <figure>
-            <img id="mainPic" src="images/homepage background.jpg" alt="man biking in mountains" class="center" style="height: 600px;"/>
+            <img id="mainPic" src="images/homepage background.jpg" alt="man biking in mountains" class="center"/>
         </figure>
-        <h1 style="margin: -330px 0 160px 0; text-align: center; font-size: 80px; color: white; font-family: 'barlow'; font-weight: 200; font-style: normal">MachuWay</h1>
-        <p style="margin: -190px 0 140px 0; text-align: center; font-size: 24px; color: white; font-style: italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <h1 id="h1banner">MachuWay</h1>
+        <p id="pbanner">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
     </div>
     <article style="padding: 100px 0 100px 0;">
         <header>
             <h1>Information about page...</h1>
         </header>
         <section>
-            <p style="margin: 0 22% 0 22%;">
+            <p id="infop">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum placeat exercitationem earum corrupti minima quia, sequi debitis perspiciatis amet sed, ullam totam. Placeat praesentium quasi, dolorum tempore vero quis provident! Rerum placeat exercitationem earum corrupti minima quia, sequi debitis perspiciatis amet sed, ullam totam.
             </p>
         </section>
@@ -372,7 +428,7 @@
         <div id="mainContainer">
             <div class="shadow">
                 <div id="grid-item1">
-                    <a href="information.html"><img src="images/information.avif" alt="Kvinde der ser over machu picchu" class="center" style="height: 550px; width: 700px; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (toppen til højre, høre til subpage 1)-->
+                    <a href="information.html"><img src="images/information.avif" alt="Kvinde der ser over machu picchu" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (toppen til højre, høre til subpage 1)-->
                 </div>
                 <div id="grid-item2">
                     <a href="information.html"><!-- Link til der fører til en subpage -->
@@ -399,13 +455,13 @@
                 </div>
 
                 <div id="grid-item4">
-                    <a href="checklist.html"><img src="images/checklist and map.avif" alt="produkter til cyklen" class="center" style="height: 550px; width: 700px; object-fit: cover; float: right;"></a> <!-- Link til der fører til en subpage og relevant billede (row 2 column 1)-->
+                    <a href="checklist.html"><img src="images/checklist and map.avif" alt="produkter til cyklen" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (row 2 column 1)-->
                 </div>
             </div>
 
             <div class="shadow">
                  <div id="grid-item5">
-                <a href="tipstricks.html"><img src="images/tips and tricks.avif" alt="video med playbutton" class="center" style="height: 550px; width: 700px; object-fit: cover; float: left;"></a> <!-- Link der fører til en subpage og relevant billede (row 3 column 2)-->
+                <a href="tipstricks.html"><img src="images/tips and tricks.avif" alt="video med playbutton" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link der fører til en subpage og relevant billede (row 3 column 2)-->
                 </div>
 
                 <div id="grid-item6">
@@ -433,7 +489,7 @@
                 </div>
 
                 <div id="grid-item8">
-                    <a href="faq.html"><img src="images/FAQ.avif" alt="spørgsmålstegn" class="center" style="height: 550px; width: 700px; object-fit: cover; float: right;"></a> <!-- Link der fører til en subpage og relevant billede (row 4 column 1)-->
+                    <a href="faq.html"><img src="images/FAQ.avif" alt="spørgsmålstegn" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link der fører til en subpage og relevant billede (row 4 column 1)-->
                 </div>
             </div>
         </div>
