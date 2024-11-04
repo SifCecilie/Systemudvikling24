@@ -6,6 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MachuWay</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+
+a:hover {
+            opacity: 0.6;
+        }
+
+        /* Area med tips  */
+        body article {
+            width: 100%;
+            padding: 60px;
+        }
+
+        body figure {
+            width: 100%;
+            margin: auto;
+        }
+
+        /* Overskriften i article */
+        article header {
+            text-align: center;
+            padding-top: 0%;
+            font-size: 120%;
+            font-weight: bold;
+        }
+
+        /* brødteksten i article */
+        article section {
+            width: 100%;
+            font-weight: lighter;
+            margin: auto;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        article section p {
+            text-align: justify;
+            text-align: center;
+        }
+
+        article main p {
+            width: 90%;
+            font-weight: lighter;
+            margin: auto;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        #mainContainer {
+            display: grid;
+            grid-template-columns: auto auto;
+            width: 100%;
+            height: 100%;
+            font-weight: lighter;
+            margin: auto;
+            text-align: center;
+            font-size: 16px;
+        }
+        #grid-item1
+        {
+            text-align: center;
+            background-color: #7d9b76;
+            height: 100%;
+            padding: 5%;
+            margin: 3%;
+        }
+
+        #grid-item2
+        {
+            text-align: center;
+            background-color: #dc9b5a;
+            height: 100%;
+            padding: 5%;
+            margin: 3%;
+        }
+        
+</style>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
 
@@ -22,6 +99,63 @@
         <nav id="hovedmenu"> <!-- Navigationsbar -->
         </nav>
     </header>
+    <figure>
+        <img id="infoPic" src="images/mainTips.jpg" alt="Picture of Machu Picchu" class="center" style="height: 400px;"/>
+    </figure>
+    <h1 style="margin: -240px 0 120px 0; text-align: center; font-size: 70px; color: rgba(230, 227, 227, 0.856); font-weight: lighter;">Tips and Tricks</h1>
+    <br>
+    <h2 style="margin: -130px 0 120px 0; text-align: center; font-size: 30px; color: rgba(255, 255, 255, 0.856); font-weight: lighter;">
+        The dos and the don'ts
+    </h2>
+</div>
+<article style="padding: 0px 0 100px 0;">
+    <section>
+    <header>
+        <h1 style="padding-bottom: 40px; padding-top: 50px;">How is hiking in Machu Picchu</h1>
+    </header>
+        <p style="margin: 0% 12% 5% 12%;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta dolores distinctio laboriosam eum facilis quae quaerat perspiciatis consequuntur ipsa. Natus consequuntur debitis eligendi mollitia, error non officia ducimus culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis doloribus natus architecto excepturi fuga quidem nulla deserunt maxime, facilis et vel consequuntur animi doloremque ducimus, dolorem optio velit placeat quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex debitis dignissimos inventore dolore. Obcaecati, deserunt voluptatem rem iusto aliquam sed labore ullam qui! Libero aperiam alias eum magnam itaque accusamus?
+        </p>
+        <main>
+            <div id="mainContainer">
+                <div id="grid-item1">
+                    <h3 style="padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                        Best tips to prepare you for the hike
+                    </h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum magni, velit, repellendus incidunt odio necessitatibus hic expedita error libero dolore et, eaque ut perspiciatis odit impedit minus illum quaerat tenetur!</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit itaque voluptatum amet nulla obcaecati? Suscipit, officiis. Nesciunt quos repudiandae, eum neque, quisquam, fugiat saepe et reiciendis iusto aspernatur non reprehenderit.</li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, harum tempora consectetur, labore a vitae molestias non veniam perspiciatis rerum doloribus, provident laboriosam delectus dicta commodi repellat esse necessitatibus ut.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sed deserunt voluptate nobis, eius natus vitae quibusdam similique dicta a eligendi et recusandae. Velit molestias facilis, eveniet suscipit magnam laborum.</li>
+                    </ul>
+                </div>
+                <div id="grid-item2">
+                        <h3 style="padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                            What to avoid when hiking
+                        </h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum magni, velit, repellendus incidunt odio necessitatibus hic expedita error libero dolore et, eaque ut perspiciatis odit impedit minus illum quaerat tenetur!</li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit itaque voluptatum amet nulla obcaecati? Suscipit, officiis. Nesciunt quos repudiandae, eum neque, quisquam, fugiat saepe et reiciendis iusto aspernatur non reprehenderit.</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, harum tempora consectetur, labore a vitae molestias non veniam perspiciatis rerum doloribus, provident laboriosam delectus dicta commodi repellat esse necessitatibus ut.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sed deserunt voluptate nobis, eius natus vitae quibusdam similique dicta a eligendi et recusandae. Velit molestias facilis, eveniet suscipit magnam laborum.</li>
+                        </ul>
+                </div>
+            </div>
+        </main>
+        <header>
+            <h1 style="padding-bottom: 2%; padding-top: 8%; margin-left: 10%; margin-right: 10%; background-color: #ffffff;">Wildlife in Machu Picchu</h1>
+        </header>
+        <p style=" margin-left: 10%; margin-right: 10%; background-color: #ffffff;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus temporibus totam non, reiciendis distinctio tenetur deserunt perferendis delectus ab. Voluptas magni possimus exercitationem facere. Cupiditate iure voluptatum tenetur omnis saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ad repellat, magnam sed repudiandae mollitia iste quam recusandae nihil inventore sequi id officiis explicabo iure molestias nulla est. Natus, porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae alias laborum beatae iure esse molestiae similique voluptatibus soluta officia? Laboriosam distinctio eaque eligendi, et eius dolore fugit recusandae. Velit, laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores harum rerum esse assumenda labore odio quod nobis itaque autem fugiat atque earum, alias quam temporibus ducimus odit ratione, veritatis sed!
+        </p>
+    <header>
+        <h1 style="padding-bottom: 40px; padding-top: 50px; margin-left: 10%; margin-right: 10%; margin-top: 5%; background-color: #457d58;">Hiking tricks that will make the journey easier</h1>
+    </header>
+    <p style="padding: 0 12% 5% 12%; margin-left: 10%; margin-right: 10%; background-color: #457d58">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum provident quos id, ab error omnis ipsa asperiores voluptate nihil, repellendus quod consequatur impedit, illo modi. Accusantium debitis alias doloribus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aliquam quisquam provident eveniet vero vitae nihil totam sed quaerat sequi quae quis, porro numquam fuga aspernatur dignissimos doloremque corporis libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat harum sunt, rerum officia voluptate eaque sapiente vitae quia ea cum quidem ab similique illum fuga aut aperiam laudantium alias. Ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorem doloribus deserunt ea, neque harum culpa quam tenetur rerum temporibus modi reiciendis. Quaerat soluta excepturi vel eligendi ad aspernatur nulla. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam ipsa aspernatur nesciunt omnis nihil assumenda, aut doloremque facere, ab repellendus voluptate cum iure saepe officia minima non explicabo in distinctio.
+    </p>
+</section>
+</article>
 </body>
 <br>
 <div id="up">
