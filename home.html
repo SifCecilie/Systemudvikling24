@@ -45,6 +45,9 @@
             text-align: center;
         }
 
+        #mainPic {
+                height: 600px;
+            }
 
         /* MainConatiner i main elementet (container for subpages information*/
         .shadow {
@@ -217,17 +220,15 @@
                 margin-top: 2%;
             }
 
+            #infop {
+            margin: 0 11% 0 11%;
+            }
+
 
             article aside {
                 display: none;
             }
 
-            #grid-item2,
-            #grid-item3,
-            #grid-item6,
-            #grid-item7 {
-                display: none;
-            }
 
             #mainContainer {
                 display: block;
@@ -235,13 +236,21 @@
 
             }
 
-            #grid-item1,
-            #grid-item4,
-            #grid-item5,
-            #grid-item8,
-            p {
-                margin-bottom: 7%;
-            }
+            .shadow {
+            grid-template-columns: auto;
+        }
+
+        .noshadow {
+            grid-template-columns: auto;
+        }
+
+        .h3_left {
+            padding: 10% 0 5% 10%;
+        }
+
+        .grid_p_left {
+            padding: 0% 0 10% 10%;
+        }
 
             #aside2 {
                 width: 50%;
