@@ -67,7 +67,7 @@ nav ul li a {
 }
 
 a {
-   color: blue;
+   color: rgba(75, 150, 212, 0.7);
    text-decoration: none;
 }
 
@@ -81,13 +81,7 @@ a:hover {
 footer {
    background-color: #272727;
    padding: 3%;
-   height: 250px;
 }
-
-#kontakt {
-   float: right;
-}
-
 /* placere billederne i midten */
 .center {
    display: block;
@@ -96,20 +90,13 @@ footer {
    width: 100%;
 }
 
+/*Up arrow*/
 #up {
-   width: 100px;
-   text-align: center;
-   padding: 10px;
-   margin-left: 20px;
    margin-top: -5%;
-   background-color: rgb(255, 255, 255);
+   font-size: 60px;
    float: left;
+   color:#dc9b5a;
 }
-
-#up a {
-   color: #272727;
-}
-
 
 
 

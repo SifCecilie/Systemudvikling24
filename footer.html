@@ -1,6 +1,67 @@
+<style>
+    #footerBoxMain{
+        width: 100%;
+        margin: auto;
+    }
+
+    #footerBox {
+        display: grid;
+        grid-template-columns: 20% 30% 20%;
+        justify-content: center;
+    }
+
+    #footerBox p, #footerBox li{
+        font-size: 10px;
+        font-family: 'barlow';
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+   #c{
+        padding-left: 30%;
+    }
+
+    h4{
+        color: rgba(255, 255, 255, 0.8);
+        padding-bottom: 2%;
+        font-family: 'barlow';
+    }
+
+</style>
 <head>
-    <p style="color: white;">Forfatter: os
-        <br>
-        kontakt: <a href="mailto:idk@example.com" style="color: white; font-style: italic;">idk@example.com</a>
-    </p>
+    <div id="footerBoxMain">
+                <div id="footerBox">
+                    <div id=a class="grow">
+                        <h4>This website</h4>
+                        <ul>
+                            <li>
+                                <a href="home.html">Homepage</a>
+                            </li>
+                            <li>
+                                <a href="information.html">Information</a>
+                            </li>
+                            <li>
+                                <a href="tipstricks.html">Tips & Tricks</a>
+                            </li>
+                            <li>
+                                <a href="checklist.html">Checklist and map</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id=b class="grow">
+                        <h4>MachuWay</h4>
+                        <p>
+                            Located in Denmark, we are dedicated to making your Machu Picchu hiking adventure planning smooth and enjoyable. Our site offers essential tips, maps, and checklists to ensure you're well-prepared for this incredible journey.
+                        </p>
+                    </div>
+                    <div id=c class="grow">
+                        <h4>Contact us</h4>
+                        <p>
+                            MachuWay@info.dk
+                        </p>
+                    </div>
+                </div>
+    </div>
 </head>
