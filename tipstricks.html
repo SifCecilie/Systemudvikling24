@@ -58,6 +58,11 @@ a:hover {
             font-size: 16px;
         }
 
+        main h4+* {
+            display: none;
+            text-align: center;
+        }
+
         #mainContainer {
             display: grid;
             grid-template-columns: auto auto;
@@ -95,6 +100,12 @@ a:hover {
         $(document).ready(function () {
             $('#hovedmenu').load("nav.html");
             $('#kontakt').load("footer.html");
+       
+
+        $("main h4").click(function () {
+                $(this).next().slideToggle(180);
+            });
+
         });
 
     </script>
@@ -119,7 +130,11 @@ a:hover {
         <h1 style="padding-bottom: 40px; padding-top: 50px;">How is hiking in Machu Picchu</h1>
     </header>
         <p style="margin: 0% 12% 5% 12%;">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta dolores distinctio laboriosam eum facilis quae quaerat perspiciatis consequuntur ipsa. Natus consequuntur debitis eligendi mollitia, error non officia ducimus culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis doloribus natus architecto excepturi fuga quidem nulla deserunt maxime, facilis et vel consequuntur animi doloremque ducimus, dolorem optio velit placeat quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex debitis dignissimos inventore dolore. Obcaecati, deserunt voluptatem rem iusto aliquam sed labore ullam qui! Libero aperiam alias eum magnam itaque accusamus?
+            Hiking in Machu Picchu offers an unforgettable adventure but also presents physical challenges. The journey takes you through rugged terrain, including steep stone steps, hills, and high mountain passes, and the difficulty level is generally regarded as moderate. Preparing yourself is key, both in terms of physical readiness and quality equipment.
+            <br>
+            <br>
+            Physical fitness is essential on this trek. Since hiking in Machu Picchu requires strength and stamina, beginners should consider training in advance. Test yourself on local trails and focus on endurance and muscle-building exercises to prepare for the altitude and longer hiking days. The effort, however, is well worth it: Machu Picchu’s trails offer a stunning experience, combining panoramic mountain views with one of the most breathtaking archaeological sites in the world.
+
         </p>
         <main>
             <div id="mainContainer">
@@ -127,37 +142,145 @@ a:hover {
                     <h3 style="padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
                         Best tips to prepare you for the hike
                     </h3>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum magni, velit, repellendus incidunt odio necessitatibus hic expedita error libero dolore et, eaque ut perspiciatis odit impedit minus illum quaerat tenetur!</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit itaque voluptatum amet nulla obcaecati? Suscipit, officiis. Nesciunt quos repudiandae, eum neque, quisquam, fugiat saepe et reiciendis iusto aspernatur non reprehenderit.</li>
-                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, harum tempora consectetur, labore a vitae molestias non veniam perspiciatis rerum doloribus, provident laboriosam delectus dicta commodi repellat esse necessitatibus ut.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sed deserunt voluptate nobis, eius natus vitae quibusdam similique dicta a eligendi et recusandae. Velit molestias facilis, eveniet suscipit magnam laborum.</li>
-                    </ul>
+                        <h4>
+                            Invest in Quality Gear ↓
+                        </h4> 
+                            <p>
+                                A good pair of hiking boots is essential. Choose durable, comfortable boots that can handle the long journey. Since mountain weather can change quickly, pack appropriate outerwear for rain, cold, or sun, and check the weather forecast to prepare for conditions
+                            </p>
+                                <br>
+                        <h4>
+                            Carry Maps and GPS ↓
+                        </h4> 
+                            <p>
+                                Staying on track in unfamiliar terrain can be tricky, so bring maps and a GPS device. Stick to designated trails to ensure your safety and protect the environment.
+                            </p>
+                                <br>
+                        <h4>
+                            Hike with Others ↓
+                        </h4> 
+                            <p>
+                                If it’s your first time on the trail, consider hiking with a group or hiring a guide. Experienced hikers and local guides can offer valuable support and insight, enhancing your journey.
+                            </p>
+                                <br>
+                        <h4>
+                            Get Permits and Tickets in Advance ↓
+                        </h4> 
+                            <p>
+                                The Inca Trail and certain areas around Machu Picchu require permits, which are limited and can sell out months in advance. Plan ahead to secure your spot.
+                            </p>
+                                <br>
+                        <h4>
+                            Prepare for Altitude ↓
+                        </h4> 
+                            <p>
+                                Altitude sickness can affect even seasoned hikers. Bring any necessary medication, stay hydrated, and take it slow to let your body adjust to the thinner air.
+                            </p>
+                                <br>
+                        <h4>
+                            Stay Hydrated and Eat Regularly ↓
+                        </h4> 
+                            <p>
+                                High altitudes can cause a loss of appetite, but fueling up with regular meals and staying hydrated is essential to maintain your energy throughout the trek.
+                            </p>
+                                <br>
+                        <h4>
+                            Capture the Moments ↓
+                        </h4> 
+                            <p>
+                                Machu Picchu offers some of the most breathtaking scenes you’ll ever encounter. Don’t forget your camera or smartphone to capture the views—you’ll want memories of this journey.
+                            </p>
+                                <br>
                 </div>
                 <div id="grid-item2">
-                        <h3 style="padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
-                            What to avoid when hiking
-                        </h3>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum magni, velit, repellendus incidunt odio necessitatibus hic expedita error libero dolore et, eaque ut perspiciatis odit impedit minus illum quaerat tenetur!</li>
-                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit itaque voluptatum amet nulla obcaecati? Suscipit, officiis. Nesciunt quos repudiandae, eum neque, quisquam, fugiat saepe et reiciendis iusto aspernatur non reprehenderit.</li>
-                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, harum tempora consectetur, labore a vitae molestias non veniam perspiciatis rerum doloribus, provident laboriosam delectus dicta commodi repellat esse necessitatibus ut.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sed deserunt voluptate nobis, eius natus vitae quibusdam similique dicta a eligendi et recusandae. Velit molestias facilis, eveniet suscipit magnam laborum.</li>
-                        </ul>
+                    <h3 style="padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                        Best tips of what to avoid on the hike
+                    </h3>
+                        <h4>
+                            Avoid Unfamiliar Plants ↓
+                        </h4> 
+                            <p>
+                                While it’s tempting to explore nature fully, avoid eating any wild plants, berries, or mushrooms unless you know they’re safe.
+                            </p>
+                                <br>
+                        <h4>
+                            Don’t Leave Trash Behind ↓
+                        </h4> 
+                            <p>
+                                Follow Leave No Trace principles, and respect the natural environment by packing out all of your waste.
+                            </p>
+                                <br>
+                        <h4>
+                            Pack Smart ↓
+                        </h4> 
+                            <p>
+                                Avoid overpacking or underpacking. Stick to essentials and avoid unnecessary items, but don’t skimp on what you’ll need for safety and comfort
+                            </p>
+                                <br>
+                        <h4>
+                            Don’t Start Too Fast ↓
+                        </h4> 
+                            <p>
+                                Hiking in Machu Picchu is a marathon, not a sprint. Set a steady pace that matches your physical abilities, giving yourself time to acclimatize and enjoy the surroundings.
+                            </p>
+                                <br>
+                        <h4>
+                            Test New Gear Ahead of Time ↓
+                        </h4> 
+                            <p>
+                                Make sure you’re familiar with your gear before the trip. Breaking in boots and testing equipment will help prevent discomfort on the trail.
+                            </p>
+                                <br>
                 </div>
             </div>
         </main>
         <header>
             <h1 style="padding-bottom: 2%; padding-top: 8%; margin-left: 10%; margin-right: 10%; background-color: #ffffff;">Wildlife in Machu Picchu</h1>
         </header>
-        <p style=" margin-left: 10%; margin-right: 10%; background-color: #ffffff;">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus temporibus totam non, reiciendis distinctio tenetur deserunt perferendis delectus ab. Voluptas magni possimus exercitationem facere. Cupiditate iure voluptatum tenetur omnis saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ad repellat, magnam sed repudiandae mollitia iste quam recusandae nihil inventore sequi id officiis explicabo iure molestias nulla est. Natus, porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae alias laborum beatae iure esse molestiae similique voluptatibus soluta officia? Laboriosam distinctio eaque eligendi, et eius dolore fugit recusandae. Velit, laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores harum rerum esse assumenda labore odio quod nobis itaque autem fugiat atque earum, alias quam temporibus ducimus odit ratione, veritatis sed!
-        </p>
+        <p style=" margin-left: 20%; margin-right: 20%; background-color: #ffffff;">
+            Machu Picchu’s diverse ecosystem is home to a fascinating array of wildlife, adding another layer of wonder to the journey. The unique climate and elevation, ranging from 2,430 meters, create habitats for diverse plants and animals that make this UNESCO World Heritage Site a biodiversity hotspot.
+            <br>
+            <br>
+            <br>
+            <div id="wildLifeImage">
+                <img src="images/wildLife.jpg" alt="Tegning a inca empire" class="center" style="height: 60%; width: 65%;"></a> <!-- Link til der fører til en subpage og relevant billede (toppen til højre, høre til subpage 1)-->
+            </div>
+            <br>
+            <br>
+        <ul style="margin: 0% 8% 5% 8%; text-align: justify; padding: 2% 10% 5% 10%;">
+            <li >
+                <h2>Llamas</h2> You’ll likely encounter llamas roaming freely around Machu Picchu’s ruins. Originally used as pack animals by the Incas, llamas today contribute to the site’s unique atmosphere.
+            </li>
+            <br>
+            <li>
+                <h2>Spectacled Bears</h2> Known for the distinctive white markings around their eyes, spectacled bears are generally shy and harmless. Spotting one is rare, but they’re a thrilling addition to Machu Picchu’s wildlife.
+            </li>
+            <br>
+            <li>
+                <h2>Pumas</h2> Pumas are rare sightings and tend to avoid human presence. Occasionally captured on wildlife cameras, they remind visitors of the untouched nature around the ancient site.
+            </li>
+            <br>
+            <li>
+                <h2>Snakes</h2> Although encounters are rare, some snakes in the area are venomous, so it’s wise to watch your step and be aware of your surroundings.
+            </li>
+            <br>
+            <li>
+                <h2>Birdlife</h2> Machu Picchu is also home to spectacular bird species, such as the vibrant Andean cock-of-the-rock, the masked trogon, and the majestic Andean condor. The area’s rich avian life adds color and beauty to the journey.
+            </li>
+        </ul>
+    </p>
     <header>
         <h1 style="padding-bottom: 40px; padding-top: 50px; margin-left: 10%; margin-right: 10%; margin-top: 5%; background-color: #457d58;">Hiking tricks that will make the journey easier</h1>
     </header>
     <p style="padding: 0 12% 5% 12%; margin-left: 10%; margin-right: 10%; background-color: #457d58">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum provident quos id, ab error omnis ipsa asperiores voluptate nihil, repellendus quod consequatur impedit, illo modi. Accusantium debitis alias doloribus sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aliquam quisquam provident eveniet vero vitae nihil totam sed quaerat sequi quae quis, porro numquam fuga aspernatur dignissimos doloremque corporis libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat harum sunt, rerum officia voluptate eaque sapiente vitae quia ea cum quidem ab similique illum fuga aut aperiam laudantium alias. Ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorem doloribus deserunt ea, neque harum culpa quam tenetur rerum temporibus modi reiciendis. Quaerat soluta excepturi vel eligendi ad aspernatur nulla. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam ipsa aspernatur nesciunt omnis nihil assumenda, aut doloremque facere, ab repellendus voluptate cum iure saepe officia minima non explicabo in distinctio.
+        If you’re hiking with a group, consider hiring a porter service. Porters can transport your heavier belongings to the next stop, allowing you to hike with a lighter pack. Many guided tours offer porter assistance, which can make a significant difference, letting you focus on the journey rather than the weight of your load.
+    <br>
+    <br>
+        Another trick to ease the physical strain of hiking at altitude is to bring hiking poles. Many hikers overlook them, but poles can significantly reduce pressure on your knees, especially during descents. They also aid in balance on rocky or uneven paths, making you feel more stable and confident as you move.
+    <br>
+    <br>
+        Wearing a brimmed hat or a neck buff will also help protect you from the strong Andean sun. The high altitude means less atmospheric protection, so these items will shield you from sunburn and keep you cool, especially during midday when the sun is at its peak.
+
     </p>
 </section>
 </article>
