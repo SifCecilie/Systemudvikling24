@@ -98,6 +98,35 @@ footer {
    color:#dc9b5a;
 }
 
+/*Headers and other*/
+h2 {
+   text-align: center;
+   font-size: 38px;
+   font-family: 'barlow';
+   color: #272727;
+   padding-bottom: 2%;
+}
+
+h4{
+   color: rgba(255, 255, 255, 0.8);
+   padding-bottom: 2%;
+   font-family: 'barlow';
+}
+
+h5{
+   text-align: center;
+   padding: 2%;
+   font-size: 28px;
+   font-family: 'barlow';
+   color: #272727;
+}
+
+figcaption{
+   text-align: left;
+   font-size: 14px;
+   font-family: 'barlow';
+   color: #272727;
+}
 
 
 /*som udgangspunkt er brødteksten skjult*/
