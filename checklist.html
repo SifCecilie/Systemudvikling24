@@ -11,6 +11,112 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>MachuWay</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+
+a:hover {
+            opacity: 0.6;
+        }
+
+        /* Area med tips  */
+        body article {
+            width: 100%;
+            padding: 60px;
+        }
+
+        body figure {
+            width: 100%;
+            margin: auto;
+        }
+
+        /* Overskriften i article */
+        article header {
+            text-align: center;
+            padding-top: 0%;
+            font-size: 120%;
+            font-weight: bold;
+        }
+
+        /* brødteksten i article */
+        article section {
+            width: 100%;
+            font-weight: lighter;
+            margin: auto;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        article section p {
+            text-align: justify;
+            text-align: center;
+        }
+
+        article main p {
+            width: 90%;
+            font-weight: lighter;
+            margin: auto;
+            text-align: center;
+            font-size: 16px;
+        }
+
+      
+
+        #mainContainer {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            width: 100%;
+            height: 100%;
+            font-weight: lighter;
+            margin: auto;
+            text-align: center;
+            font-size: 16px;
+        }
+        #grid-item1
+        {
+            text-align: center;
+            height: 100%;
+            padding: 4%;
+            margin: 2%;
+        }
+
+        #grid-item2
+        {
+            text-align: center;
+            background-color: #dc9b5a;
+            height: 100%;
+            padding: 5%;
+            margin: 3%;
+        }
+
+        #checklistContainer {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            width: 100%;
+            height: 100%;
+            font-weight: lighter;
+            margin: auto;
+            text-align: center;
+            font-size: 16px;
+        }
+        #grid-item3
+        {
+            text-align: center;
+            height: 100%;
+            background-color: #457d58;
+            padding: 5%;
+            margin: 3%;
+        }
+
+        #grid-item4
+        {
+            text-align: center;
+            background-color: #7d9b76;
+            height: 100%;
+            padding: 5%;
+            margin: 3%;
+        }
+        
+</style>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
 
@@ -18,6 +124,9 @@
         $(document).ready(function () {
             $('#hovedmenu').load("nav.html");
             $('#kontakt').load("footer.html");
+       
+
+
         });
 
     </script>
@@ -27,6 +136,94 @@
         <nav id="hovedmenu"> <!-- Navigationsbar -->
         </nav>
     </header>
+    <figure>
+        <img id="infoPic" src="images/checklistMain.jpg" alt="Picture of Machu Picchu" class="center" style="height: 400px;"/>
+    </figure>
+    <h1 style="margin: -240px 0 120px 0; text-align: center; font-size: 70px; color: rgba(230, 227, 227, 0.856); font-weight: lighter;">Routes and checklist</h1>
+    <br>
+    <h2 style="margin: -130px 0 120px 0; text-align: center; font-size: 30px; color: rgba(255, 255, 255, 0.856); font-weight: lighter;">
+        Make your own personal checklist
+    </h2>
+</div>
+<article style="padding: 0px 0 100px 0;">
+    <section>
+    <header>
+        <h1 style="padding-bottom: 40px; padding-top: 50px;">Why is it important to pack properly?</h1>
+    </header>
+        <p style="margin: 0% 12% 5% 12%;">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum totam, dolores nobis fugit porro officiis quisquam, enim quis suscipit deleniti labore, iste qui quod odio ex tempore est facere repellat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, accusantium a quia animi doloremque obcaecati nesciunt mollitia facilis ullam vel. Earum voluptatibus ipsum optio laudantium maxime minima animi minus quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere non beatae! Corporis, rem exercitationem doloremque facilis earum maxime nostrum ea ut sequi numquam, tempora voluptas, consequuntur dolorum dicta veniam. 
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minima a quasi ratione pariatur quae tempore! Modi dolor doloremque possimus voluptatum qui sint cupiditate minima mollitia soluta? Ipsa, nihil distinctio? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa eligendi quidem iusto voluptas incidunt vitae ipsum officia voluptates officiis tenetur rem, totam alias molestiae aliquam! Distinctio expedita porro vel veritatis.
+
+        </p>
+        <main>
+            <div id="mainContainer">
+                <div id="grid-item1">
+                    <div id="grid-item1">
+                        <img src="images/routes.jpg" alt="Kvinde der ser over machu picchu" class="center" style="height: 100%; width: 100%; "> <!-- Link til der fører til en subpage og relevant billede (toppen til højre, høre til subpage 1)-->
+                    </div>
+                </div>
+                <div id="grid-item2">
+                    <h3 style="padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                        Read about the different routes
+                    </h3>
+                        <h4>
+                            Route 1; Name ↓
+                        </h4> 
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus sequi iste officiis! Dolorem ipsam animi quidem ad earum natus, qui, illum, minus voluptatibus est similique maxime non cum ab nam? 
+                            </p>
+                                <br>
+                        <h4>
+                            Route 2; Name ↓
+                        </h4> 
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem delectus totam nam sint maxime. Facere quibusdam esse expedita explicabo architecto, iusto nulla earum ab est eos tempore aliquam? Ipsum, fugiat? 
+                            </p>
+                                <br>
+                        <h4>
+                            Route 3; Name ↓
+                        </h4> 
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quibusdam, sunt cum ea magni odit non reiciendis eos consequuntur accusamus explicabo, rem qui earum aliquid quasi quia placeat pariatur provident!
+                            </p>
+                                <br>
+                        <h4>
+                            Route 4; Name ↓
+                        </h4> 
+                            <p>
+                               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius iure doloribus libero et neque quos consequatur quisquam deleniti voluptatum veniam rem odio alias fugit, beatae doloremque ipsum quam nisi vero.
+                            </p>
+                                <br>
+                </div>
+            </div>
+        </main>
+        <header>
+            <h1 style="padding-top: 8%; margin-left: 10%; margin-right: 10%; background-color: #ffffff;">We've made a checklist for you
+            </h1>
+            <h10>But feel free to customize it</h10>
+        </header>
+        <br>
+        <p style=" margin-left: 20%; margin-right: 20%; background-color: #ffffff;">
+            Machu Picchu’s diverse ecosystem is home to a fascinating array of wildlife, adding another layer of wonder to the journey. The unique climate and elevation, ranging from 2,430 meters, create habitats for diverse plants and animals that make this UNESCO World Heritage Site a biodiversity hotspot.
+            <br>
+            <br>
+            <br>
+            <div id="checklistContainer">
+                <div id="grid-item3">
+                    <h3 style="padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                        Checklist for route 1
+                    </h3>
+                </div>
+                <div id="grid-item4">
+                    <h3 style="padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                        Your personal checklist
+                    </h3>
+                </div>
+            </div>
+</section>
+</article>
 </body>
 <footer>
     <div>
