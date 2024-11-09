@@ -142,8 +142,29 @@
             margin: auto;
         }
 
+        #fileInput{
+            margin-left: 15%;
+        }
+
+        #downloadBtn {
+            padding: 1%;
+            width: 17%;
+            margin: auto;
+            font-style: italic;
+        }
+
         #itemInput {
             padding: 2%;
+        }
+
+        #checklistP {
+            margin: 2% 10% 4% 10%;
+            font-style: italic;
+        }
+
+        .downuploadP {
+            margin: 4% 10% 1% 10%;
+            font-style: italic;
         }
         
 </style>
@@ -251,39 +272,89 @@
                     <h3 style="padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
                         Your personal checklist
                     </h3>
+                    <p id="checklistP">
+                        Here you can write your own items and add them to your personal list. To mark the item as packed, simply click on the item. Didn't need the item anyways? Double click the item to remove it from the list again.
+                    </p>
                     <ul id="listContainer"></ul>
                     <form id="itemForm">
                         <input type="text" id="itemInput" placeholder="Enter an item" required />
                         <button type="submit">Add to List</button>
                     </form>
+                    <br>
+                    <p class="downuploadP" >Here you can download the list and upload it again when you visit us later!</p>
+                    <button id="downloadBtn" onclick="downloadList()">Download List</button>
+                    <br>
+                    <p class="downuploadP" >Upload your saved .txt file here to make your list appear again.</p>
+                    <input type="file" id="fileInput" accept=".txt" onchange="uploadList(event)">
                     <script>
                         const itemForm = document.getElementById('itemForm');
                         const itemInput = document.getElementById('itemInput');
                         const listContainer = document.getElementById('listContainer');
                 
+    
                         function addItem(event) {
                             event.preventDefault();
-
-                        const itemText = itemInput.value.trim();
-
-                        if (itemText !== '') {
+                            const itemText = itemInput.value.trim();
+                
+                            if (itemText !== '') {
+                                createListItem(itemText, 'white');
+                                itemInput.value = '';
+                            }
+                        }
+                
+                        function createListItem(text, color) {
                             const listItem = document.createElement('li');
                             listItem.className = 'list-item';
-                            listItem.textContent = itemText;
-
+                            listItem.textContent = text;
+                            listItem.style.backgroundColor = color;
+                
                             listItem.addEventListener('click', () => {
                                 listItem.style.backgroundColor = 
-                                    listItem.style.backgroundColor === 'rgb(220, 155, 90)' ? 'white' : 'rgb(220, 155, 90)';
+                                    listItem.style.backgroundColor === 'rgb(220, 155, 90)' ? 'white' : '#dc9b5a';
                             });
-
-
+                
+                            listItem.addEventListener('dblclick', () => {
+                                listContainer.removeChild(listItem);
+                            });
+                
                             listContainer.appendChild(listItem);
-
-                            itemInput.value = '';
-                            }
                         }
 
                         itemForm.addEventListener('submit', addItem);
+            
+                        function downloadList() {
+                            const items = document.querySelectorAll('.list-item');
+                            let content = '';
+                            items.forEach(item => {
+                                const color = item.style.backgroundColor === 'rgb(220, 155, 90)' ? '#dc9b5a' : 'white';
+                                content += `${item.textContent},${color}\n`;
+                            });
+                
+                            const blob = new Blob([content], { type: 'text/plain' });
+                            const url = URL.createObjectURL(blob);
+                            const a = document.createElement('a');
+                            a.href = url;
+                            a.download = 'checklist.txt';
+                            a.click();
+                            URL.revokeObjectURL(url);
+                        }
+                
+                        function uploadList(event) {
+                            const file = event.target.files[0];
+                            if (file) {
+                                const reader = new FileReader();
+                                reader.onload = function(e) {
+                                    const lines = e.target.result.split('\n');
+                                    lines.forEach(line => {
+                                        const [text, color] = line.split(',').map(item => item.trim());
+                                        if (text) {
+                                            createListItem(text, color || 'white');
+                                        }
+                                    });
+                                };
+                                reader.readAsText(file);
+                            }
+                        }
                     </script>
                 </div>
             </div>
