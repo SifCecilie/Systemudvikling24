@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <style>
 
-a:hover {
+    a:hover {
             opacity: 0.6;
         }
 
@@ -113,6 +113,37 @@ a:hover {
             height: 100%;
             padding: 5%;
             margin: 3%;
+        }
+
+        /* For personal checklist */
+        #listContainer {
+            margin-top: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .list-item {
+            background-color: #f2f2f2;
+            padding: 10px;
+            border-radius: 4px;
+            width: 50%;
+            margin: 0 25% 2% 25%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 50%;
+            margin: auto;
+        }
+
+        form button {
+            padding: 2%;
+            width: 30%;
+            margin: auto;
+        }
+
+        #itemInput {
+            padding: 2%;
         }
         
 </style>
@@ -220,6 +251,40 @@ a:hover {
                     <h3 style="padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
                         Your personal checklist
                     </h3>
+                    <ul id="listContainer"></ul>
+                    <form id="itemForm">
+                        <input type="text" id="itemInput" placeholder="Enter an item" required />
+                        <button type="submit">Add to List</button>
+                    </form>
+                    <script>
+                        const itemForm = document.getElementById('itemForm');
+                        const itemInput = document.getElementById('itemInput');
+                        const listContainer = document.getElementById('listContainer');
+                
+                        function addItem(event) {
+                            event.preventDefault();
+
+                        const itemText = itemInput.value.trim();
+
+                        if (itemText !== '') {
+                            const listItem = document.createElement('li');
+                            listItem.className = 'list-item';
+                            listItem.textContent = itemText;
+
+                            listItem.addEventListener('click', () => {
+                                listItem.style.backgroundColor = 
+                                    listItem.style.backgroundColor === 'rgb(220, 155, 90)' ? 'white' : 'rgb(220, 155, 90)';
+                            });
+
+
+                            listContainer.appendChild(listItem);
+
+                            itemInput.value = '';
+                            }
+                        }
+
+                        itemForm.addEventListener('submit', addItem);
+                    </script>
                 </div>
             </div>
 </section>
