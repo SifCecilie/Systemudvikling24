@@ -1,10 +1,98 @@
 <!-- This is nav.html -->
+<style>
+nav {
+   display: flex;
+   align-items: center;
+   background-color: #7d9b76;
+   width: 100%;
+   text-align: center;
+   justify-content: space-between;
+ }
+
+ #logo {
+   height: 90px;
+   padding: 14px 14px 14px 34px;
+}
+
+/* Navigationsbaren */
+nav ul {
+   display: flex;
+   justify-content: center; /* Centers the nav items horizontally */
+   width: 100%;
+   padding-top: 18px;
+}
+
+nav ul li {
+   display: inline-block;
+}
+
+nav ul li a {
+   display: block;
+   color: white;
+   font-weight: 400;
+   font-size: 1.2rem;
+   padding: 14px 50px;
+   text-decoration: none;
+   font-family: 'barlow';
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    background-color:#7d9b76;
+    padding-right: 8%;
+}
+        
+#check {
+    display: none;
+    }
+
+@media screen and (max-width:640px) {
+    #logo {
+   height: 90px;
+   padding: 14px 14px 14px 34px;
+    }
+
+    .checkbtn {
+    display: block;
+    }
+
+    ul {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 100%;
+    background-color: #7d9b76;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    }
+
+    ul li {
+    margin: 20px 0;
+    }
+
+    ul li a {
+    font-size: 20px;
+    }
+
+    #check:checked ~ ul {
+    right: 0;
+    }
+
+}
+</style>
 <head>
 <nav id="myTopnav" class="Top">
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
         <i class="fa fa-bars"></i>
     </label>
+    <a href="home.html"><img id="logo" src="images/logo.png"/></a>
         <ul>
             <li>
                 <a href="home.html">Homepage</a>

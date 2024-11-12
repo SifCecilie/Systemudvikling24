@@ -13,8 +13,18 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <style>
 
-a:hover {
+        a:hover {
             opacity: 0.6;
+        }
+
+        #bannerh1 {
+            margin: -250px 2% 120px 2%;
+            text-align: center;
+            font-size: 70px;
+            color: rgba(230, 227, 227, 0.856);
+            font-family: 'barlow';
+            font-weight: 200;
+            font-style: normal;
         }
 
         /* Area med tips  */
@@ -26,6 +36,10 @@ a:hover {
         body figure {
             width: 100%;
             margin: auto;
+        }
+
+        #infoPic {
+            height: 400px;
         }
 
         #article {
@@ -142,9 +156,14 @@ a:hover {
             * {
                 font-size: 90%;
             }
+
         }
 
         @media screen and (max-width:640px) {
+            #bannerh1 {
+                margin: -330px 2% 70px 2%;
+            }
+
             #mainContainer {
                 grid-template-columns: auto;
             }
@@ -224,6 +243,21 @@ a:hover {
                 right: 0;
             }
 
+            #skillp {
+                padding-bottom: 8%;
+            }
+
+        }
+
+        @media screen and (max-width:640px) {
+            #bannerh1 {
+                margin: -140px 2% 40px 2%;
+                font-size: 36px;
+            }
+
+            #infoPic {
+            height: 200px;
+        }
         }
         
 </style>
@@ -245,14 +279,14 @@ a:hover {
         </nav>
     </header>
     <figure>
-        <img id="infoPic" src="images/infoMain.jpg" alt="Picture of Machu Picchu" class="center" style="height: 400px;"/>
+        <img id="infoPic" src="images/infoMain.jpg" alt="Picture of Machu Picchu" class="center"/>
     </figure>
-    <h1 style="margin: -260px 0 120px 0; text-align: center; font-size: 70px; color: rgba(230, 227, 227, 0.856); font-weight: lighter;">Good thing to know<br>Before you go</h1>
+    <h1 id="bannerh1">Good thing to know<br>Before you go</h1>
 </div>
 <article id="article">
     <section>
     <header>
-        <h1 style="padding-bottom: 40px; padding-top: 50px;">What information will you find in this subpage</h1>
+        <h1 style="padding: 50px 2% 40px 2%;">What information will you find in this subpage</h1>
     </header>
         <p style="margin: 0% 12% 5% 12%;">
             In recent years, hiking has surged in popularity, offering individuals a way to connect with nature and challenge themselves. Hiking essentially involves walking along a trail, allowing each hiker to set their own pace and choose their path. Combine this with the breathtaking scenery and ancient ruins of Machu Picchu, and you’re set for a remarkable journey.
