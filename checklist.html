@@ -111,6 +111,17 @@
             margin: 3%;
         }
 
+        #grid-item3 li{
+            text-align: left;
+            margin-bottom: 2%;
+        }
+
+        #grid-item3 button{
+            padding: 1%;
+            text-align: center;
+            margin: 0% 5% 0% 5%;
+        }
+
         #grid-item4
         {
             text-align: center;
@@ -281,9 +292,78 @@
             <br>
             <div id="checklistContainer">
                 <div id="grid-item3">
-                    <h3 style="padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                    <button type="button" onclick="showChecklist('checklist1')">1</button>
+                    <button type="button" onclick="showChecklist('checklist2')">2</button>
+                    <button type="button" onclick="showChecklist('checklist3')">3</button>
+                    <button type="button" onclick="showChecklist('checklist4')">4</button>
+                    <div id="checklist1" style="display: block;">
+                    <h3 style="text-align: center; padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
                         Checklist for route 1
                     </h3>
+                    <ol>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                        <li>item 4</li>
+                        <li>item 5</li>
+                        <li>item 6</li>
+                        <li>item 7</li>
+                        <li>item 8</li>
+                        <li>item 9</li>
+                        <li>item 10</li>
+                    </ol>
+                </div>
+                <div id="checklist2" style="display: none;">
+                    <h3 style="text-align: center; padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                        Checklist for route 2
+                    </h3>
+                    <ol>
+                        <li>item a</li>
+                        <li>item b</li>
+                        <li>item c</li>
+                        <li>item d</li>
+                        <li>item e</li>
+                        <li>item f</li>
+                        <li>item g</li>
+                        <li>item h</li>
+                        <li>item i</li>
+                        <li>item j</li>
+                    </ol>
+                </div>
+                <div id="checklist3" style="display: none;">
+                    <h3 style="text-align: center; padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                        Checklist for route 3
+                    </h3>
+                    <ol>
+                        <li>item I</li>
+                        <li>item II</li>
+                        <li>item III</li>
+                        <li>item IV</li>
+                        <li>item V</li>
+                        <li>item VI</li>
+                        <li>item VII</li>
+                        <li>item VIII</li>
+                        <li>item IX</li>
+                        <li>item X</li>
+                    </ol>
+                </div>
+                <div id="checklist4" style="display: none;">
+                    <h3 style="text-align: center; padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                        Checklist for route 4
+                    </h3>
+                    <ol>
+                        <li>item .-</li>
+                        <li>item -...</li>
+                        <li>item -.-.</li>
+                        <li>item -..</li>
+                        <li>item .</li>
+                        <li>item ..-.</li>
+                        <li>item --.</li>
+                        <li>item ....</li>
+                        <li>item ..</li>
+                        <li>item .---</li>
+                    </ol>
+                </div>
                 </div>
                 <div id="grid-item4">
                     <h3 style="padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
@@ -304,6 +384,15 @@
                     <p class="downuploadP" >Upload your saved .txt file here to make your list appear again.</p>
                     <input type="file" id="fileInput" accept=".txt" onchange="uploadList(event)">
                     <script>
+                        /*funktion der looper gennem checklist array'et. den finder den checkliste der matcher ID med knappen, viser den checkliste og skjuler de andre.
+                        '? : ' er en forkortet version af if/else.*/
+                        function showChecklist(checklistId) {
+                        const checklists = ['checklist1', 'checklist2', 'checklist3', 'checklist4'];
+                            checklists.forEach(id => {
+                            document.getElementById(id).style.display = (id === checklistId) ? 'block' : 'none';
+                            });
+                        }
+
                         const itemForm = document.getElementById('itemForm');
                         const itemInput = document.getElementById('itemInput');
                         const listContainer = document.getElementById('listContainer');

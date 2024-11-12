@@ -102,6 +102,11 @@ figcaption{
    color: #272727;
 }
 
+ol{
+   margin-left: 15%;
+   list-style-position: inside; /*makes sure the numbered lists left margin is even*/
+}
+
 
 /*som udgangspunkt er brødteksten skjult*/
 /* aside h2+* {
