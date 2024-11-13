@@ -54,7 +54,8 @@ a:hover {
 /* Bunden af dokumentet */
 footer {
    background-color: #272727;
-   padding: 3%;
+   padding-top: 3%;
+   padding-bottom: 3%;
 }
 /* placere billederne i midten */
 .center {
