@@ -301,16 +301,16 @@
                         Checklist for route 1
                     </h3>
                     <ol>
-                        <li>item 1</li>
-                        <li>item 2</li>
-                        <li>item 3</li>
-                        <li>item 4</li>
-                        <li>item 5</li>
-                        <li>item 6</li>
-                        <li>item 7</li>
-                        <li>item 8</li>
-                        <li>item 9</li>
-                        <li>item 10</li>
+                        <li onclick="addToPersonalChecklist('item 1')">item 1</li>
+                        <li onclick="addToPersonalChecklist('item 2')">item 2</li>
+                        <li onclick="addToPersonalChecklist('item 3')">item 3</li>
+                        <li onclick="addToPersonalChecklist('item 4')">item 4</li>
+                        <li onclick="addToPersonalChecklist('item 5')">item 5</li>
+                        <li onclick="addToPersonalChecklist('item 6')">item 6</li>
+                        <li onclick="addToPersonalChecklist('item 7')">item 7</li>
+                        <li onclick="addToPersonalChecklist('item 8')">item 8</li>
+                        <li onclick="addToPersonalChecklist('item 9')">item 9</li>
+                        <li onclick="addToPersonalChecklist('item 10')">item 10</li>
                     </ol>
                 </div>
                 <div id="checklist2" style="display: none;">
@@ -318,16 +318,16 @@
                         Checklist for route 2
                     </h3>
                     <ol>
-                        <li>item a</li>
-                        <li>item b</li>
-                        <li>item c</li>
-                        <li>item d</li>
-                        <li>item e</li>
-                        <li>item f</li>
-                        <li>item g</li>
-                        <li>item h</li>
-                        <li>item i</li>
-                        <li>item j</li>
+                        <li onclick="addToPersonalChecklist('item a')">item a</li>
+                        <li onclick="addToPersonalChecklist('item b')">item b</li>
+                        <li onclick="addToPersonalChecklist('item c')">item c</li>
+                        <li onclick="addToPersonalChecklist('item d')">item d</li>
+                        <li onclick="addToPersonalChecklist('item e')">item e</li>
+                        <li onclick="addToPersonalChecklist('item f')">item f</li>
+                        <li onclick="addToPersonalChecklist('item g')">item g</li>
+                        <li onclick="addToPersonalChecklist('item h')">item h</li>
+                        <li onclick="addToPersonalChecklist('item i')">item i</li>
+                        <li onclick="addToPersonalChecklist('item j')">item j</li>
                     </ol>
                 </div>
                 <div id="checklist3" style="display: none;">
@@ -335,16 +335,16 @@
                         Checklist for route 3
                     </h3>
                     <ol>
-                        <li>item I</li>
-                        <li>item II</li>
-                        <li>item III</li>
-                        <li>item IV</li>
-                        <li>item V</li>
-                        <li>item VI</li>
-                        <li>item VII</li>
-                        <li>item VIII</li>
-                        <li>item IX</li>
-                        <li>item X</li>
+                        <li onclick="addToPersonalChecklist('item I')">item I</li>
+                        <li onclick="addToPersonalChecklist('item II')">item II</li>
+                        <li onclick="addToPersonalChecklist('item III')">item III</li>
+                        <li onclick="addToPersonalChecklist('item I')">item IV</li>
+                        <li onclick="addToPersonalChecklist('item V')">item V</li>
+                        <li onclick="addToPersonalChecklist('item VI')">item VI</li>
+                        <li onclick="addToPersonalChecklist('item VII')">item VII</li>
+                        <li onclick="addToPersonalChecklist('item VIII')">item VIII</li>
+                        <li onclick="addToPersonalChecklist('item IX')">item IX</li>
+                        <li onclick="addToPersonalChecklist('item X')">item X</li>
                     </ol>
                 </div>
                 <div id="checklist4" style="display: none;">
@@ -352,16 +352,16 @@
                         Checklist for route 4
                     </h3>
                     <ol>
-                        <li>item .-</li>
-                        <li>item -...</li>
-                        <li>item -.-.</li>
-                        <li>item -..</li>
-                        <li>item .</li>
-                        <li>item ..-.</li>
-                        <li>item --.</li>
-                        <li>item ....</li>
-                        <li>item ..</li>
-                        <li>item .---</li>
+                        <li onclick="addToPersonalChecklist('item .-')">item .-</li>
+                        <li onclick="addToPersonalChecklist('item -...')">item -...</li>
+                        <li onclick="addToPersonalChecklist('item -.-.')">item -.-.</li>
+                        <li onclick="addToPersonalChecklist('item -..')">item -..</li>
+                        <li onclick="addToPersonalChecklist('item .')">item .</li>
+                        <li onclick="addToPersonalChecklist('item ..-.')">item ..-.</li>
+                        <li onclick="addToPersonalChecklist('item --.')">item --.</li>
+                        <li onclick="addToPersonalChecklist('item ....')">item ....</li>
+                        <li onclick="addToPersonalChecklist('item ..')">item ..</li>
+                        <li onclick="addToPersonalChecklist('item .---')">item .---</li>
                     </ol>
                 </div>
                 </div>
@@ -460,6 +460,10 @@
                                 };
                                 reader.readAsText(file);
                             }
+                        }
+
+                        function addToPersonalChecklist(itemText) {
+                            createListItem(itemText, 'white');
                         }
                     </script>
                 </div>
