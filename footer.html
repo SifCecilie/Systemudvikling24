@@ -16,48 +16,59 @@
         font-family: 'barlow';
         color: rgba(255, 255, 255, 0.7);
         text-align: center;
+        padding-bottom: 2%;
     }
 
    #c{
         padding-left: 12%;
     }
 
+    @media screen and (max-width:640px){
+        #footerBox {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin: 0% 15% 0% 15%;
+        }
+        #footerLinks {
+            border: 1px solid red; /* Remove after debugging */
+            padding: 20px;
+            height: auto;
+        }
+
+        #c{
+            padding: 0%;
+            margin: 0%;
+        }
+    }
+
 </style>
 <head>
     <div id="footerBoxMain">
                 <div id="footerBox">
-                    <div id=a class="grow">
+                    <div id="a">
                         <h4>This website</h4>
-                        <ul>
-                            <li>
-                                <a href="home.html">Homepage</a>
-                            </li>
-                            <li>
-                                <a href="information.html">Information</a>
-                            </li>
-                            <li>
-                                <a href="tipstricks.html">Tips & Tricks</a>
-                            </li>
-                            <li>
-                                <a href="checklist.html">Checklist and map</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
+                        <ul id="footerLinks">
+                            <li><a href="home.html">Homepage</a></li>
+                            <li><a href="information.html">Information</a></li>
+                            <li><a href="tipstricks.html">Tips & Tricks</a></li>
+                            <li><a href="checklist.html">Checklist and map</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
                         </ul>
+                        <br>
                     </div>
-                    <div id=b class="grow">
+                    <div id="b">
                         <h4>MachuWay</h4>
                         <p>
                             Located in Denmark, we are dedicated to making your Machu Picchu hiking adventure planning smooth and enjoyable. Our site offers essential tips, maps, and checklists to ensure you're well-prepared for this incredible journey.
                         </p>
-                    </div>
-                    <div id=c class="grow">
-                        <h4>Contact</h4>
                         <br>
+                    </div>
+                    <div id="c">
+                        <h4>Contact</h4>
                         <p>
-                            <a href="mailto:MachuWay@info.dk?body=This mail does not exist. Only used for show." target="_blank" style="font-size: 60%;">MachuWay@info.dk</a>
+                            <a href="mailto:MachuWay@info.dk?body=This mail does not exist. Only used for show." target="_blank">MachuWay@info.dk</a>
                         </p>
+                        <br>
                     </div>
                 </div>
     </div>
