@@ -11,6 +11,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>MachuWay</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+
+        a:hover {
+            opacity: 0.6;
+        }
+
+        article header {
+            text-align: center;
+            font-size: 120%;
+            font-weight: bold;
+        }
+
+        main h4+* {
+            display: none;
+            text-align: center;
+        }
+
+        article p {
+            text-align: center;
+        }
+
+        #faq {
+            background-color: #7d9b76;
+            margin: 0% 5% 0% 5%;
+            text-align: center;
+            padding-bottom: 5%;
+        }
+
+        #faq h3 {
+            padding-top: 8%; 
+            padding-bottom:4%; 
+            margin-top: 2%;
+            color: aliceblue;
+        }
+
+        #faq h4 {
+            font-size: 75%;
+        }
+
+        #faq p {
+            font-size: 60%;
+            padding: 0% 5% 0% 5%;
+        }
+
+        figure h1 {
+            margin: -240px 0 120px 0; 
+            text-align: center; 
+            font-size: 70px; 
+            color: rgba(15, 13, 13, 0.856); 
+            font-weight: lighter;
+        }
+
+        figure h2 {
+            margin: -130px 0 120px 0; 
+            text-align: center; 
+            font-size: 30px; 
+            color: rgba(15, 13, 13, 0.856);
+        }
+
+        article  {
+            padding-bottom: 5%; 
+            padding-top: 3%;
+            margin: 0% 12% 0% 12%;
+        }
+
+        article p {
+            margin: 3% 12% 5% 12%;
+        }
+        
+</style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
 
@@ -18,6 +88,12 @@
         $(document).ready(function () {
             $('#hovedmenu').load("nav.html");
             $('#kontakt').load("footer.html");
+       
+
+        $("main h4").click(function () {
+                $(this).next().slideToggle(180);
+            });
+
         });
 
     </script>
@@ -27,6 +103,107 @@
         <nav id="hovedmenu"> <!-- Navigationsbar -->
         </nav>
     </header>
+    <figure>
+        <img id="infoPic" src="images/faqMain.jpg" alt="Picture of tree tops" class="center"/>
+    
+    <h1>
+        FAQ
+    </h1>
+    <br>
+    <h2>
+        Frequently asked questions
+    </h2>
+</figure>
+<article>
+    <header>
+        <h1>
+            We answer your most asked questions
+        </h1>
+    </header>
+        <p>
+            Hiking in Machu Picchu offers an unforgettable adventure but also presents physical challenges. The journey takes you through rugged terrain, including steep stone steps, hills, and high mountain passes, and the difficulty level is generally regarded as moderate. Preparing yourself is key, both in terms of physical readiness and quality equipment.
+            <br>
+            <br>
+            Physical fitness is essential on this trek. Since hiking in Machu Picchu requires strength and stamina, beginners should consider training in advance. Test yourself on local trails and focus on endurance and muscle-building exercises to prepare for the altitude and longer hiking days. The effort, however, is well worth it: Machu Picchu’s trails offer a stunning experience, combining panoramic mountain views with one of the most breathtaking archaeological sites in the world.
+
+        </p>
+        <main>
+                <div id="faq">
+                    <h3>
+                        Frequently asked questions
+                    </h3>
+                        <h4>
+                            Question number 1 ↓
+                        </h4> 
+                            <p>
+                                A good pair of hiking boots is essential. Choose durable, comfortable boots that can handle the long journey. Since mountain weather can change quickly, pack appropriate outerwear for rain, cold, or sun, and check the weather forecast to prepare for conditions
+                            </p>
+                                <br>
+                        <h4>
+                            Question number 2 ↓
+                        </h4> 
+                            <p>
+                                Staying on track in unfamiliar terrain can be tricky, so bring maps and a GPS device. Stick to designated trails to ensure your safety and protect the environment.
+                            </p>
+                                <br>
+                        <h4>
+                            Question number 3 ↓
+                        </h4> 
+                            <p>
+                                If it’s your first time on the trail, consider hiking with a group or hiring a guide. Experienced hikers and local guides can offer valuable support and insight, enhancing your journey.
+                            </p>
+                                <br>
+                        <h4>
+                            Question number 4 ↓
+                        </h4> 
+                            <p>
+                                The Inca Trail and certain areas around Machu Picchu require permits, which are limited and can sell out months in advance. Plan ahead to secure your spot.
+                            </p>
+                                <br>
+                        <h4>
+                            Question number 5 ↓
+                        </h4> 
+                            <p>
+                                Altitude sickness can affect even seasoned hikers. Bring any necessary medication, stay hydrated, and take it slow to let your body adjust to the thinner air.
+                            </p>
+                                <br>
+                        <h4>
+                            Question number 6 ↓
+                        </h4> 
+                            <p>
+                                High altitudes can cause a loss of appetite, but fueling up with regular meals and staying hydrated is essential to maintain your energy throughout the trek.
+                            </p>
+                                <br>
+                        <h4>
+                            Question number 7 ↓
+                        </h4> 
+                            <p>
+                                Machu Picchu offers some of the most breathtaking scenes you’ll ever encounter. Don’t forget your camera or smartphone to capture the views—you’ll want memories of this journey.
+                            </p>
+                                <br>
+                        <h4>
+                            Question number 8 ↓
+                        </h4> 
+                            <p>
+                                Machu Picchu offers some of the most breathtaking scenes you’ll ever encounter. Don’t forget your camera or smartphone to capture the views—you’ll want memories of this journey.
+                            </p>
+                                <br>
+                        <h4>
+                            Question number 9 ↓
+                        </h4> 
+                            <p>
+                                Machu Picchu offers some of the most breathtaking scenes you’ll ever encounter. Don’t forget your camera or smartphone to capture the views—you’ll want memories of this journey.
+                            </p>
+                                <br>
+                        <h4>
+                            Question number 10 ↓
+                        </h4> 
+                            <p>
+                                Machu Picchu offers some of the most breathtaking scenes you’ll ever encounter. Don’t forget your camera or smartphone to capture the views—you’ll want memories of this journey.
+                            </p>
+                                <br>
+                </div>
+    </article>
 </body>
 <footer>
     <div>
