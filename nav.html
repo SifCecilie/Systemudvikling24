@@ -17,9 +17,10 @@ nav {
 /* Navigationsbaren */
 nav ul {
    display: flex;
-   justify-content: center; /* Centers the nav items horizontally */
+   justify-content: space-between; /* Centers the nav items horizontally */
    width: 100%;
-   padding-top: 18px;
+   gap: 2%;
+   margin: 0 15% 0 15%;
 }
 
 nav ul li {
@@ -31,7 +32,6 @@ nav ul li a {
    color: white;
    font-weight: 400;
    font-size: 1.2rem;
-   padding: 14px 50px;
    text-decoration: none;
    font-family: 'barlow';
 }
@@ -49,10 +49,16 @@ nav ul li a {
     display: none;
     }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:1115px) {
+    nav ul {
+        margin: 0 7% 0 7%;
+    }
+}
+
+@media screen and (max-width:840px) {
     #logo {
-   height: 90px;
-   padding: 14px 14px 14px 34px;
+        height: 90px;
+        padding: 14px 14px 14px 34px;
     }
 
     .checkbtn {
@@ -60,17 +66,19 @@ nav ul li a {
     order: 1;
     }
 
+    nav ul {
+        margin: 0 0 0 0;
+    }
+
     ul {
-    position: fixed;
-    top: 80px;
-    right: -100%;
-    width: 100%;
-    background-color: #7d9b76;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s;
+        position: fixed;
+        top: 80px;
+        right: -100%; /* Completely off-screen initially */
+        background-color: #7d9b76;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s ease; /* Smooth slide-in transition */
+        margin: 0 0 0 0;
     }
 
     ul li {
@@ -102,7 +110,7 @@ nav ul li a {
                 <a href="tipstricks.html">Tips & Tricks</a>
             </li>
             <li>
-                <a href="checklist.html">Checklist and map</a>
+                <a href="checklist.html">Checklist & map</a>
             </li>
             <li>
                 <a href="faq.html">FAQ</a>
