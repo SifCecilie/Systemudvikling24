@@ -156,9 +156,9 @@
             margin: auto;
         }
 
-        form button {
+        form button, #removeAllBtn {
             padding: 2%;
-            width: 45%;
+            width: 56%;
             margin: auto;
         }
 
@@ -168,13 +168,19 @@
 
         #downloadBtn {
             padding: 1%;
-            width: 24%;
+            width: 28%;
             margin: auto;
             font-style: italic;
         }
 
         #itemInput {
             padding: 2%;
+        }
+
+        #removeAllBtn {
+            margin-top: 4%;
+            width: 28%;
+            padding: 1%;
         }
 
         #checklistP {
@@ -505,6 +511,7 @@
                         <input type="text" id="itemInput" placeholder="Enter an item" required />
                         <button type="submit">Add to List</button>
                     </form>
+                    <button id="removeAllBtn">Remove All</button>
                     <br>
                     <p class="downuploadP" >Here you can download the list and upload it again when you visit us later!</p>
                     <button id="downloadBtn" onclick="downloadList()">Download List</button>
@@ -614,6 +621,17 @@
                         function addToPersonalChecklist(itemText) {
                             createListItem(itemText, 'white');
                         }
+                        
+                        document.addEventListener("DOMContentLoaded", () => {
+                            const removeAllBtn = document.getElementById("removeAllBtn");
+                            const listContainer = document.getElementById("listContainer");
+
+                            removeAllBtn.addEventListener("click", () => {
+                                while (listContainer.firstChild) {
+                                    listContainer.removeChild(listContainer.firstChild);
+                                }
+                            });
+                        });
                     </script>
                 </div>
             </div>
