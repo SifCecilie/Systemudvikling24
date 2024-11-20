@@ -17,48 +17,52 @@
             opacity: 0.6;
         }
 
-        /* Area med tips  */
-        body article {
-            width: 100%;
-            padding: 60px;
-        }
-
-        body figure {
-            width: 100%;
-            margin: auto;
-        }
-
-        /* Overskriften i article */
-        article header {
+        #h1banner {
+            margin: -300px 0 160px 0;
             text-align: center;
-            padding-top: 0%;
-            font-size: 120%;
-            font-weight: bold;
+            font-size: 80px;
+            color:white;
+            font-family: 'barlow';
+            font-weight: 200;
+            font-style: normal;
         }
 
-        /* brødteksten i article */
-        article section {
-            width: 100%;
-            font-weight: lighter;
-            margin: auto;
+        #pbanner {
+            margin: -190px 0 140px 0;
             text-align: center;
-            font-size: 16px;
+            font-size: 24px;
+            color: white;
+            font-style: italic;
         }
 
-        article section p {
-            text-align: justify;
-            text-align: center;
+        article {
+            padding: 100px 0 100px 0;
         }
 
-        article main p {
-            width: 90%;
-            font-weight: lighter;
-            margin: auto;
-            text-align: center;
-            font-size: 16px;
+        h1 {
+           padding-bottom: 60px;
+           color: #272727;
+           font-size: 38px;
         }
 
-      
+        h2 {
+            padding-top: 8%; 
+            margin-left: 10%; 
+            margin-right: 10%; 
+            background-color: #ffffff;
+        }
+
+        h3 {
+            padding-top: 2%; 
+            padding-bottom:4%; 
+            margin-top: 2%; 
+            font-size: 140%;
+        }
+     
+        #infop {
+            margin: 0 10% 10% 10%;
+            font-size: 90%;
+        }
 
         #mainContainer {
             display: grid;
@@ -107,7 +111,7 @@
             text-align: center;
             height: 100%;
             background-color: #457d58;
-            padding: 5%;
+            padding: 10%;
             margin: 3%;
         }
 
@@ -209,21 +213,19 @@
         <nav id="hovedmenu"> <!-- Navigationsbar -->
         </nav>
     </header>
-    <figure>
-        <img id="mainPic" src="images/checklistMain.jpg" alt="Picture of Machu Picchu" class="center" style="height: 400px;"/>
-    </figure>
-    <h1 style="margin: -240px 0 120px 0; text-align: center; font-size: 70px; color: rgba(230, 227, 227, 0.856); font-weight: lighter;">Routes and checklist</h1>
-    <br>
-    <h2 style="margin: -130px 0 120px 0; text-align: center; font-size: 30px; color: rgba(255, 255, 255, 0.856); font-weight: lighter;">
-        Make your own personal checklist
-    </h2>
-</div>
-<article style="padding: 0px 0 100px 0;">
+    <div id="banner">
+        <figure>
+            <img id="mainPic" src="images/checklistMain.jpg" alt="man biking in mountains" class="center"/>
+        </figure>
+        <h1 id="h1banner">Routes and checklist</h1>
+        <p id="pbanner">Make your own personal checklist</p>
+    </div>
+<article>
     <section>
     <header>
-        <h1 style="padding-bottom: 40px; padding-top: 50px;">Why is it important to pack properly?</h1>
+        <h1>Why is it important to pack properly?</h1>
     </header>
-        <p style="margin: 0% 12% 5% 12%;">
+        <p id="infop">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum totam, dolores nobis fugit porro officiis quisquam, enim quis suscipit deleniti labore, iste qui quod odio ex tempore est facere repellat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, accusantium a quia animi doloremque obcaecati nesciunt mollitia facilis ullam vel. Earum voluptatibus ipsum optio laudantium maxime minima animi minus quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere non beatae! Corporis, rem exercitationem doloremque facilis earum maxime nostrum ea ut sequi numquam, tempora voluptas, consequuntur dolorum dicta veniam. 
             <br>
             <br>
@@ -242,7 +244,7 @@
                         <button id="leftButton" onclick="plusDivs(1)">&#10095;</button>
                 </div>
                 <div id="grid-item2">
-                    <h3 style="padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                    <h3>
                         Read about the different routes
                     </h3>
                         <a href="https://www.machupicchutrek.net/2-day-inca-trail/" target=”_blank”>
@@ -289,12 +291,12 @@
             </div>
         </main>
         <header>
-            <h1 style="padding-top: 8%; margin-left: 10%; margin-right: 10%; background-color: #ffffff;">We've made a checklist for you
-            </h1>
+            <h2> We've made a checklist for you
+            </h2>
             <h10>But feel free to customize it</h10>
         </header>
         <br>
-        <p style=" margin-left: 20%; margin-right: 20%; background-color: #ffffff;">
+        <p style=" margin-left: 15%; margin-right: 15%;">
             Machu Picchu’s diverse ecosystem is home to a fascinating array of wildlife, adding another layer of wonder to the journey. The unique climate and elevation, ranging from 2,430 meters, create habitats for diverse plants and animals that make this UNESCO World Heritage Site a biodiversity hotspot.
             <br>
             <br>
@@ -305,14 +307,14 @@
                     <button type="button" onclick="showChecklist('checklist2')">2</button>
                     <button type="button" onclick="showChecklist('checklist3')">3</button>
                     <button type="button" onclick="showChecklist('checklist4')">4</button>
-                    <div id="checklist1" style="display: block;">
-                    <h3 style="text-align: center; padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                    <div id="checklist1">
+                    <h3>
                         Checklist for Inca Trek
                     </h3>
                     <h3>
                         Food and hydration
                     </h3>
-                    <p style="padding: 10px;">
+                    <p>
                         For a full day of hiking, aim to carry 700 grams to 1 kilogram of food per day, with a small surplus. To maintain energy levels on a hike, plan to consume approximately 200-300 calories every hour. Plan to bring 1 liter of water for every two hours of moderate hiking. On this trail, you will be passing through some villages where you can refill. So, if you are planning on hiking for 2 days, and with 7 hiking hours per day:
                     </p>
                     <ol>
@@ -346,13 +348,13 @@
                     </ol>
                 </div>
                 <div id="checklist2" style="display: none;">
-                    <h3 style="text-align: center; padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                    <h3>
                         Checklist for Lares Trek
                     </h3>
                     <h3>
                         Food and hydration
                     </h3>
-                    <p style="padding: 10px;">
+                    <p>
                         For a full day of hiking, aim to carry 700 grams to 1 kilogram of food per day, with a small surplus. To maintain energy levels on a hike, plan to consume approximately 200-300 calories every hour. Plan to bring 1 liter of water for every two hours of moderate hiking. On this trail, you will be passing through some villages where you can refill. So, if you are planning on hiking for 3 days, and with 7 hiking hours per day:
                     </p>
                     <ol>
@@ -389,13 +391,13 @@
                     </ol>
                 </div>
                 <div id="checklist3" style="display: none;">
-                    <h3 style="text-align: center; padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                    <h3>
                         Checklist for Salkantay Trek
                     </h3>
                     <h3>
                         Food and hydration
                     </h3>
-                    <p style="padding: 10px;">
+                    <p>
                         For a full day of hiking, aim to carry 700 grams to 1 kilogram of food per day, with a small surplus. To maintain energy levels on a hike, plan to consume approximately 200-300 calories every hour. Plan to bring 1 liter of water for every two hours of moderate hiking. On this trail, you will be passing through some villages where you can refill. So, if you are planning on hiking for 4 days, and with 7 hiking hours per day:
                     </p>
                     <ol>
@@ -429,13 +431,13 @@
                     </ol>
                 </div>
                 <div id="checklist4" style="display: none;">
-                    <h3 style="text-align: center; padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                    <h3>
                         Checklist for Vilcabamba Trek
                     </h3>
                     <h3>
                         Food and hydration
                     </h3>
-                    <p style="padding: 10px;">
+                    <p>
                         For a full day of hiking, aim to carry 700 grams to 1 kilogram of food per day, with a small surplus. To maintain energy levels on a hike, plan to consume approximately 200-300 calories every hour. Plan to bring 1 liter of water for every two hours of moderate hiking. On this trail, you will be passing through some villages where you can refill. So, if you are planning on hiking for 5 days, and with 7 hiking hours per day:
                     </p>
                     <ol>
@@ -472,7 +474,7 @@
                 </div>
                 </div>
                 <div id="grid-item4">
-                    <h3 style="padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                    <h3>
                         Your personal checklist
                     </h3>
                     <p id="checklistP">
@@ -489,6 +491,8 @@
                     <br>
                     <p class="downuploadP" >Upload your saved .txt file here to make your list appear again.</p>
                     <input type="file" id="fileInput" accept=".txt" onchange="uploadList(event)">
+
+                    
                     <script>
                         /*funktion til maps slideshow*/
                         var slideIndex = 1;
