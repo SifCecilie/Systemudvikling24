@@ -13,7 +13,11 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <style>
 
-    a:hover {
+        #up{
+            margin-left: 2%;
+        }
+
+        a:hover {
             opacity: 0.6;
         }
 
@@ -58,6 +62,11 @@
             margin-top: 2%; 
             font-size: 140%;
         }
+
+        h4{
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 2%;
+        }
      
         #infop {
             margin: 0 10% 10% 10%;
@@ -89,12 +98,15 @@
             height: 100%;
             padding: 5%;
             margin: 3%;
-        
         }
 
-        #grid-item2 li{
-            margin-bottom: 2%;
+        #grid-item2 p{
+            text-align: center;
         }
+
+        #grid-item2-small{
+             display: none;   
+            }
 
         #checklistContainer {
             display: grid;
@@ -197,21 +209,46 @@
             display: none;
         }
 
+        @media screen and (max-width:1115px){
+            #grid-item2{
+                display: none;
+            }
+
+            #grid-item2-small h4+* {
+            display: none;
+            text-align: center;
+        }
+
+            #grid-item2-small{
+                display: block;
+                text-align: center;
+                background-color: #dc9b5a;
+                height: 100%;
+                padding: 5%;
+                margin: 3%;
+            }
+
+            #grid-item2-small a{
+                color: #272727;
+                size: 200%;
+                font-weight: bold;
+            }
+        }
+
        
 </style>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-
         // kalder på navbar og footer 
         $(document).ready(function () {
             $('#hovedmenu').load("nav.html");
             $('#kontakt').load("footer.html");
-       
 
-
+            $('#grid-item2-small h4').click(function () {
+                $(this).next().slideToggle(180);
+            });
         });
-
     </script>
 </head>
 <body>
@@ -257,42 +294,87 @@
                         <h4>
                             Route 1; Shorter Inca Trail
                         </h4></a>
-                            <ul>
-                                <li>Distance: ~13km</li>
-                                <li>Number of Days: 1 - 2 days, can be extended to 2 - 3 days for trekkers who would like to spend an additional day at Machu Picchu</li>
-                                <li>Difficulty: short and easy, no high altitude passes</li>
-                            </ul>
+                            <p>
+                                Distance: ~13km.<br><br>
+                                Number of Days: 1 - 2 days, can be extended to 2 - 3 days for trekkers who would like to spend an additional day at Machu Picchu.<br><br>
+                                Difficulty: short and easy, no high altitude passes.
+                            </p>
                                 <br>
                         <a href="https://www.machupicchutrek.net/lares-trek/" target=”_blank”>
                         <h4>
                             Route 2; Lares Trek
                         </h4></a>
-                        <ul>
-                            <li>Distance: ~33km</li>
-                            <li>Number of Days: 3 - 4 days, can be extended or shortened depending on route variation and number of days spent in Machu Picchu</li>
-                            <li>Difficulty: A fair bit longer but relatively easy, with one tough pass</li>
-                        </ul>
+                        <p>
+                            Distance: ~33km<br><br>
+                            Number of Days: 3 - 4 days, can be extended or shortened depending on route variation and number of days spent in Machu Picchu<br><br>
+                            Difficulty: A fair bit longer but relatively easy, with one tough pass
+                        </p>
                             <br>
                         <a href="https://www.machupicchutrek.net/salkantay-trek/" target=”_blank”>
                         <h4>
                             Route 3; Salkantay Trek
                         </h4></a>
-                        <ul>
-                            <li>Distance: ~55km</li>
-                            <li>Number of Days: 4 - 5 days when trekking around 12km a day</li>
-                            <li>Difficulty: long trekking days and high altitude (~4,600m (El Passo – Salkantay Pass))</li>
-                        </ul>
+                        <p>
+                            Distance: ~55km<br><br>
+                            Number of Days: 4 - 5 days when trekking around 12km a day<br><br>
+                            Difficulty: long trekking days and high altitude (~4,600m (El Passo – Salkantay Pass))                        
+                        </p>
                             <br>
                         <a href="https://www.machupicchutrek.net/vilcabamba-trek/" target=”_blank”>
                         <h4>
                             Route 4; Vilcabamba Trek
                         </h4></a>
-                        <ul>
-                            <li>Distance: ~62km</li>
-                            <li>Number of Days: 4-5 days when trekking around 16km a day </li>
-                            <li>Difficulty: arguably the most difficult trek to Machu Picchu, long trekking days and many high passes</li>
-                        </ul>
+                        <p>
+                            Distance: ~62km<br><br>
+                            Number of Days: 4-5 days when trekking around 16km a day <br><br>
+                            Difficulty: arguably the most difficult trek to Machu Picchu, long trekking days and many high passes
+                        </p>
+                </div>
+                <!-- Route grid for when screen gets below 1115px -->
+                <div id="grid-item2-small">
+                    <h3>
+                        Read about the different routes
+                    </h3>
+                        <h4>
+                            Shorter Inca Trail ↓
+                        </h4>
+                            <p>
+                                Distance: ~13km.<br><br>
+                                Number of Days: 1 - 2 days, can be extended to 2 - 3 days for trekkers who would like to spend an additional day at Machu Picchu.<br><br>
+                                Difficulty: short and easy, no high altitude passes.<br><br>
+                                Click <a href="https://www.machupicchutrek.net/2-day-inca-trail/" target=”_blank”>here</a> for a link to the route.
+                            </p>
+                                <br>
+                        <h4>
+                            Lares Trek ↓
+                        </h4></a>
+                        <p>
+                            Distance: ~33km<br><br>
+                            Number of Days: 3 - 4 days, can be extended or shortened depending on route variation and number of days spent in Machu Picchu<br><br>
+                            Difficulty: A fair bit longer but relatively easy, with one tough pass<br><br>
+                            Click <a href="https://www.machupicchutrek.net/lares-trek/" target=”_blank”>here</a> for a link to the route.
+                        </p>
+                            
                             <br>
+                        <h4>
+                            Salkantay Trek ↓
+                        </h4>
+                        <p>
+                            Distance: ~55km<br><br>
+                            Number of Days: 4 - 5 days when trekking around 12km a day<br><br>
+                            Difficulty: long trekking days and high altitude (~4,600m (El Passo – Salkantay Pass))<br><br>
+                            Click <a href="https://www.machupicchutrek.net/salkantay-trek/" target=”_blank”>here</a> for a link to the route.
+                        </p>
+                            <br>
+                        <h4>
+                            Vilcabamba Trek ↓
+                        </h4>
+                        <p>
+                            Distance: ~62km<br><br>
+                            Number of Days: 4-5 days when trekking around 16km a day <br><br>
+                            Difficulty: arguably the most difficult trek to Machu Picchu, long trekking days and many high passes<br><br>
+                            Click <a href="https://www.machupicchutrek.net/vilcabamba-trek/" target=”_blank”>here</a> for a link to the route.
+                        </p>
                 </div>
             </div>
         </main>
