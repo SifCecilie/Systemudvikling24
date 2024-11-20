@@ -90,11 +90,91 @@ a:hover {
             padding: 5%;
             margin: 3%;
         }
+
+        /*den store header på siden*/ 
+        #tipsheader {
+            margin: -240px 0 120px 0;
+            text-align: center;
+            font-size: 70px;
+            color: rgba(230, 227, 227, 0.856);
+            font-weight: lighter;
+        }
+
+        /*h2 header på banner*/
+        #tipsh2{
+            margin: -130px 0 120px 0; 
+            text-align: center; 
+            font-size: 30px; 
+            color: rgba(255, 255, 255, 0.856); 
+            font-weight: lighter;
+        }
+        /*header på tips to prepare listen */
+        #grid-item1H3 {
+            padding-top: 2%; 
+            padding-bottom:4%; 
+            margin-top: 2%; 
+            font-size: 140%;
+        }
+        /*header i den nederste boks med tricks */
+        #hikingtricksH1 {
+            padding-bottom: 40px; 
+            padding-top: 50px; 
+            margin-left: 10%; 
+            margin-right: 10%; 
+            margin-top: 5%; 
+            background-color: #457d58;
+        }
+        /*p i den nederste boks med tricks*/
+        #hikingtricksP {
+            padding: 0 12% 5% 12%; 
+            margin-left: 10%; 
+            margin-right: 10%; 
+            background-color: #457d58
+        }
+        /*Header på listen med what to avoid */
+        #grid-item2H3 {
+            padding-top: 2%; 
+            padding-bottom:4%; 
+            margin-top: 2%; 
+            font-size: 140%
+        }
+        /*header på wildlife listen */
+        #wildlifeHeader { 
+            padding-bottom: 2%; 
+            padding-top: 8%; 
+            margin-left: 10%; 
+            margin-right: 10%; 
+            background-color: #ffffff;
+        }
+        /*wildlife listen */
+        #wildlife {
+            margin: 0% 8% 5% 8%; 
+            text-align: justify; 
+            padding: 2% 10% 5% 10%;
+        }
+        /*øverste p på wildlife listen */
+        #wildlifeP {
+            margin-left: 20%; 
+            margin-right: 20%; 
+            background-color: #ffffff;
+        }
+        #grid-item1 h4, #grid-item2 h4 {
+            font-size: 16px;
+          }
+        h1, h2 {
+            font-size: 38px;
+        }
         @media screen and (max-width:1115px) {
           #wildlife {
             position: static;
             background-color: white;
             margin: auto;
+          }
+          #tipsheader {
+            font-size:64px;
+          }
+          #tipsh2{
+            font-size: 18px;
           }
           
         }
@@ -106,16 +186,16 @@ a:hover {
             #tipsheader {
             font-size:35px;
           }
-          #tipsh2 {
-            font-size: 17px;
-          }
-          h4 {
-            font-size: 70%;
-          }
-
-          p {
+          #grid-item1 p, #grid-item2 p, #wildlife li {
             font-size: 12px;
           }
+          #grid-item1 h4, #grid-item2 h4{
+            font-size: 14px;
+          }
+          #grid-item1H3, #grid-item2H3 {
+            font-size: 16px;
+        }
+
         }
         @media screen and (max-width:400px) {
         }
@@ -168,7 +248,7 @@ a:hover {
         <main>
             <div id="mainContainer">
                 <div id="grid-item1">
-                    <h3 id="besttipsHeader">
+                    <h3 id="grid-item1H3">
                         Best tips to prepare you for the hike
                     </h3>
                         <h4>
@@ -222,7 +302,7 @@ a:hover {
                                 <br>
                 </div>
                 <div id="grid-item2">
-                    <h3 style="padding-top: 2%; padding-bottom:4%; margin-top: 2%; font-size: 140%;">
+                    <h3 id="grid-item2H3">
                         Best tips of what to avoid on the hike
                     </h3>
                         <h4>
@@ -264,9 +344,9 @@ a:hover {
             </div>
         </main>
         <header>
-            <h1 style="padding-bottom: 2%; padding-top: 8%; margin-left: 10%; margin-right: 10%; background-color: #ffffff;">Wildlife in Machu Picchu</h1>
+            <h1 id="wildlifeHeader">Wildlife in Machu Picchu</h1>
         </header>
-        <p style=" margin-left: 20%; margin-right: 20%; background-color: #ffffff;">
+        <p id="wildlifeP">
             Machu Picchu’s diverse ecosystem is home to a fascinating array of wildlife, adding another layer of wonder to the journey. The unique climate and elevation, ranging from 2,430 meters, create habitats for diverse plants and animals that make this UNESCO World Heritage Site a biodiversity hotspot.
             <br>
             <br>
@@ -276,7 +356,7 @@ a:hover {
             </div>
             <br>
             <br>
-        <ul id="wildlife" style="margin: 0% 8% 5% 8%; text-align: justify; padding: 2% 10% 5% 10%;">
+        <ul id="wildlife">
             <li >
                 <h2>Llamas</h2> You’ll likely encounter llamas roaming freely around Machu Picchu’s ruins. Originally used as pack animals by the Incas, llamas today contribute to the site’s unique atmosphere.
             </li>
@@ -299,9 +379,9 @@ a:hover {
         </ul>
     </p>
     <header>
-        <h1 style="padding-bottom: 40px; padding-top: 50px; margin-left: 10%; margin-right: 10%; margin-top: 5%; background-color: #457d58;">Hiking tricks that will make the journey easier</h1>
+        <h1 id="hikingtricksH1">Hiking tricks that will make the journey easier</h1>
     </header>
-    <p style="padding: 0 12% 5% 12%; margin-left: 10%; margin-right: 10%; background-color: #457d58">
+    <p id="hikingtricksP">
         If you’re hiking with a group, consider hiring a porter service. Porters can transport your heavier belongings to the next stop, allowing you to hike with a lighter pack. Many guided tours offer porter assistance, which can make a significant difference, letting you focus on the journey rather than the weight of your load.
     <br>
     <br>
