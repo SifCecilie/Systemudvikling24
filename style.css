@@ -108,28 +108,53 @@ footer {
 
 /*Headers and other*/
 
+#h1banner {
+   margin: -280px 0 160px 0;
+   text-align: center;
+   font-size: 80px;
+   color:white;
+   font-family: 'barlow';
+   font-weight: 200;
+   font-style: normal;
+   padding-bottom: 60px;
+}
+
+#pbanner {
+   margin: -190px 0 140px 0;
+   text-align: center;
+   font-size: 24px;
+   color: white;
+   font-style: italic;
+}
+
 h1 {
-   font-size: 100%;
+   color: #272727;
+   font-size: 2vw;
+   font-family: 'barlow';
+   color: #272727;
+   padding-bottom: 3%;
 }
 
 /*Headers and other*/
 h2 {
    text-align: center;
-   font-size: 90%;
+   font-size: 1.2vw;
    font-family: 'barlow';
    color: #272727;
-   padding-bottom: 2%;
+   padding-bottom: 3%;
 }
 
 h3 {
-   font-size: 80%;
+   font-size: 1vw;
+   font-family: 'barlow';
+   color: white;
+   padding-bottom: 2%;
 }
 
 h4{
    color: rgba(255, 255, 255, 0.8);
    padding-bottom: 2%;
    font-family: 'barlow';
-   font-size: 70%;
 }
 
 h5{
@@ -171,6 +196,16 @@ main h5 {
    nav {
       width: 100%;
    }
+
+   h1 {
+      font-size: 3vw;
+   }
+   h2 {
+      font-size: 1.7vw;
+   }
+   h3 {
+      font-size: 1.5vw;
+   }
 }
 
 @media screen and (max-width:1115px) {
@@ -179,11 +214,44 @@ main h5 {
    }
 }
 
+@media screen and (max-width:840px) {
+   h1 {
+      font-size: 4vw;
+   }
+   h2 {
+      font-size: 2.2vw;
+   }
+   h3 {
+      font-size: 2vw;
+   }
+
+}
+
 
 @media screen and (max-width:640px) {
    #mainPic {
        height: 250px;
    }
+
+   h1 {
+      font-size: 5vw;
+   }
+   h2 {
+      font-size: 3vw;
+   }
+   h3 {
+      font-size: 2.6vw;
+   }
 }
 
-@media screen and (max-width:400px) {}
+@media screen and (max-width:400px) {
+   h1 {
+      font-size: 5vw;
+   }
+   h2 {
+      font-size: 2.2vw;
+   }
+   h3 {
+      font-size: 2vw;
+   }
+}

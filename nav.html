@@ -1,12 +1,17 @@
 <!-- This is nav.html -->
 <style>
+html, body {
+    overflow-x: hidden; /* Prevents side scrolling */
+}
+
 nav {
-   display: flex;
-   align-items: center;
-   background-color: #db9d60;
-   width: 100%;
-   text-align: center;
-   justify-content: space-between;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #db9d60;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
  }
 
  #logo {
@@ -73,7 +78,7 @@ nav ul li a {
     #navul {
         position: absolute;
         top: 80px;
-        right: -100%; /* Completely off-screen initially */
+        right: -100vw; /* Completely off-screen initially */
         background-color: #db9d60;
         flex-direction: column;
         align-items: center;

@@ -37,7 +37,7 @@
 
         #faq {
             background-color: #7d9b76;
-            margin: 0% 5% 0% 5%;
+            margin: 10% 5% 5% 5%;
             text-align: center;
             padding-bottom: 5%;
         }
@@ -49,7 +49,7 @@
         }
 
         #faq h4 {
-            font-size: 75%;
+            font-size: 1.2vw;
             padding: 0% 5% 0% 5%;
         }
 
@@ -82,12 +82,19 @@
         article p {
             margin: 3% 12% 5% 12%;
         }
-        
-        @media screen and (max-width:640px){
-            #faq{
-                font-size: 75%;
-            }
+
+        @media screen and (max-width:1115px){
+            #faq h4 {
+            font-size: 1.7vw;
         }
+        }
+        
+        @media screen and (max-width:840px){
+            #faq h4 {
+            font-size: 2.4vw;
+        }
+        }
+
         
 </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -115,13 +122,8 @@
     <figure>
         <img id="mainPic" src="images/faqMain.jpg" alt="Picture of tree tops" class="center"/>
     
-    <h1>
-        FAQ
-    </h1>
-    <br>
-    <h2>
-        Frequently asked questions
-    </h2>
+    <h1 id="h1banner">FAQ</h1>
+    <p id="pbanner">Frequently asked questions</p>
 </figure>
 <article>
     <header>
@@ -138,9 +140,10 @@
         </p>
         <main>
                 <div id="faq">
-                    <h3>
+                    <br><br>
+                    <h1>
                         Frequently asked questions
-                    </h3>
+                    </h1>
                         <h4>
                             How can I stay safe while hiking? ↓
                         </h4> 

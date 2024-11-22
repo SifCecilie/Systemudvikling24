@@ -61,7 +61,7 @@
             font-size: 16px;
         }
 
-        main h4+* {
+        main h3+* {
             display: none;
             text-align: center;
         }
@@ -95,22 +95,9 @@
         }
 
         /*den store header på siden*/ 
-        #tipsheader {
-            margin: -240px 0 120px 0;
-            text-align: center;
-            font-size: 70px;
-            color: rgba(230, 227, 227, 0.856);
-            font-weight: lighter;
-        }
 
         /*h2 header på banner*/
-        #tipsh2{
-            margin: -130px 0 120px 0; 
-            text-align: center; 
-            font-size: 24px; 
-            color: rgba(255, 255, 255, 0.856); 
-            font-weight: lighter;
-        }
+
         /*header på tips to prepare listen */
         #grid-item1H3 {
             padding-top: 2%; 
@@ -134,20 +121,10 @@
             margin-right: 10%; 
             background-color: #457d58
         }
-        /*Header på listen med what to avoid */
-        #grid-item2H3 {
-            padding-top: 2%; 
-            padding-bottom:4%; 
-            margin-top: 2%; 
-            font-size: 140%
-        }
         /*header på wildlife listen */
         #wildlifeHeader { 
             padding-bottom: 2%; 
             padding-top: 8%; 
-            margin-left: 10%; 
-            margin-right: 10%; 
-            background-color: #ffffff;
         }
         /*wildlife listen */
         #wildlife {
@@ -164,9 +141,7 @@
         #grid-item1 h4, #grid-item2 h4 {
             font-size: 16px;
           }
-        h1, h2 {
-            font-size: 38px;
-        }
+
         @media screen and (max-width:1115px) {
           #wildlife {
             position: static;
@@ -217,7 +192,7 @@
             $('#kontakt').load("footer.html");
        
 
-        $("main h4").click(function () {
+        $("main h3").click(function () {
                 $(this).next().slideToggle(180);
             });
 
@@ -233,11 +208,8 @@
     <figure>
         <img id="mainPic" src="images/mainTips.jpg" alt="Picture of Machu Picchu" class="center" style="height: 400px;"/>
     </figure>
-    <h1 id="tipsheader">Tips and Tricks</h1>
-    <br>
-    <h2 id="tipsh2">
-        The dos and the don'ts
-    </h2>
+    <h1 id="h1banner">Tips and Tricks</h1>
+    <p id="pbanner">The dos and the don'ts</p>
 </div>
 <article style="padding: 0px 0 100px 0;">
     <section>
@@ -254,94 +226,94 @@
         <main>
             <div id="mainContainer">
                 <div id="grid-item1">
-                    <h3 id="grid-item1H3">
+                    <h2>
                         Best tips to prepare you for the hike
-                    </h3>
-                        <h4>
+                    </h2>
+                        <h3>
                             Invest in Quality Gear ↓
-                        </h4> 
+                        </h3> 
                             <p>
                                 A good pair of hiking boots is essential. Choose durable, comfortable boots that can handle the long journey. Since mountain weather can change quickly, pack appropriate outerwear for rain, cold, or sun, and check the weather forecast to prepare for conditions
                             </p>
                                 <br>
-                        <h4>
+                        <h3>
                             Carry Maps and GPS ↓
-                        </h4> 
+                        </h3> 
                             <p>
                                 Staying on track in unfamiliar terrain can be tricky, so bring maps and a GPS device. Stick to designated trails to ensure your safety and protect the environment.
                             </p>
                                 <br>
-                        <h4>
+                        <h3>
                             Hike with Others ↓
-                        </h4> 
+                        </h3> 
                             <p>
                                 If it’s your first time on the trail, consider hiking with a group or hiring a guide. Experienced hikers and local guides can offer valuable support and insight, enhancing your journey.
                             </p>
                                 <br>
-                        <h4>
+                        <h3>
                             Get Permits and Tickets in Advance ↓
-                        </h4> 
+                        </h3> 
                             <p>
                                 The Inca Trail and certain areas around Machu Picchu require permits, which are limited and can sell out months in advance. Plan ahead to secure your spot.
                             </p>
                                 <br>
-                        <h4>
+                        <h3>
                             Prepare for Altitude ↓
-                        </h4> 
+                        </h3> 
                             <p>
                                 Altitude sickness can affect even seasoned hikers. Bring any necessary medication, stay hydrated, and take it slow to let your body adjust to the thinner air.
                             </p>
                                 <br>
-                        <h4>
+                        <h3>
                             Stay Hydrated and Eat Regularly ↓
-                        </h4> 
+                        </h3> 
                             <p>
                                 High altitudes can cause a loss of appetite, but fueling up with regular meals and staying hydrated is essential to maintain your energy throughout the trek.
                             </p>
                                 <br>
-                        <h4>
+                        <h3>
                             Capture the Moments ↓
-                        </h4> 
+                        </h3> 
                             <p>
                                 Machu Picchu offers some of the most breathtaking scenes you’ll ever encounter. Don’t forget your camera or smartphone to capture the views—you’ll want memories of this journey.
                             </p>
                                 <br>
                 </div>
                 <div id="grid-item2">
-                    <h3 id="grid-item2H3">
+                    <h2>
                         Best tips of what to avoid on the hike
-                    </h3>
-                        <h4>
+                    </h2>
+                        <h3>
                             Avoid Unfamiliar Plants ↓
-                        </h4> 
+                        </h3> 
                             <p>
                                 While it’s tempting to explore nature fully, avoid eating any wild plants, berries, or mushrooms unless you know they’re safe.
                             </p>
                                 <br>
-                        <h4>
+                        <h3>
                             Don’t Leave Trash Behind ↓
-                        </h4> 
+                        </h3> 
                             <p>
                                 Follow Leave No Trace principles, and respect the natural environment by packing out all of your waste.
                             </p>
                                 <br>
-                        <h4>
+                        <h3>
                             Pack Smart ↓
-                        </h4> 
+                        </h3> 
                             <p>
                                 Avoid overpacking or underpacking. Stick to essentials and avoid unnecessary items, but don’t skimp on what you’ll need for safety and comfort
                             </p>
                                 <br>
-                        <h4>
+                        <h3>
                             Don’t Start Too Fast ↓
-                        </h4> 
+                        </h3> 
                             <p>
                                 Hiking in Machu Picchu is a marathon, not a sprint. Set a steady pace that matches your physical abilities, giving yourself time to acclimatize and enjoy the surroundings.
                             </p>
                                 <br>
-                        <h4>
+                        <h3>
                             Test New Gear Ahead of Time ↓
-                        </h4> 
+                        </h3> 
                             <p>
                                 Make sure you’re familiar with your gear before the trip. Breaking in boots and testing equipment will help prevent discomfort on the trail.
                             </p>
@@ -363,7 +335,7 @@
             <br>
             <br>
         <ul id="wildlife">
-            <li >
+            <li>
                 <h2>Llamas</h2> You’ll likely encounter llamas roaming freely around Machu Picchu’s ruins. Originally used as pack animals by the Incas, llamas today contribute to the site’s unique atmosphere.
             </li>
             <br>
