@@ -192,6 +192,23 @@
                 font-weight: bold;
             }
         }
+        @media screen and (max-width:850px){
+            #mainContainer{
+                grid-template-columns: 1fr;
+            }
+
+            #checklistContainer{
+                grid-template-columns: 1fr;
+            }
+
+            #grid-item4 {
+                background-color: aliceblue;
+            }
+
+            #grid-item4, h3 {
+                color: #272727;
+            }
+        }
 
        
 </style>
@@ -234,6 +251,7 @@
 
         </p>
         <main>
+            <h1>Map and information on routes</h1>
             <div id="mainContainer">
                 <div id="grid-item1">
                         <h3>Browse the different maps of the routes</h3><br>
@@ -337,7 +355,7 @@
             </div>
         </main>
         <header>
-            <br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br>
             <h1> We've made a checklist for you</h1>
             <h2 style="padding-bottom: 1%;">But feel free to customize it</h2>
         </header>
