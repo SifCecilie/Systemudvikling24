@@ -34,15 +34,16 @@ p {
    color: #272727;
 }
 .grid_p {
-   width: 70%;
    color: #272727;
-   padding: 0 0 10% 10%;
+   text-align: left;
+   margin: 0% 8% 8% 8%;
+
 }
 
 .grid_p_left {
-   width: 90%;
-   padding: 0 0 10% 20%;
    color: #272727;
+   text-align: left;
+   margin: 0% 10% 8% 10%;
 }
 
 a {

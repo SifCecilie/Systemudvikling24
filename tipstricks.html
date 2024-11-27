@@ -93,18 +93,6 @@
             padding: 5%;
             margin: 3%;
         }
-
-        /*den store header på siden*/ 
-
-        /*h2 header på banner*/
-
-        /*header på tips to prepare listen */
-        #grid-item1H3 {
-            padding-top: 2%; 
-            padding-bottom:4%; 
-            margin-top: 2%; 
-            font-size: 140%;
-        }
         /*header i den nederste boks med tricks */
         #hikingtricksH1 {
             padding-bottom: 40px; 
@@ -129,8 +117,8 @@
         /*wildlife listen */
         #wildlife {
             margin: 0% 8% 5% 8%; 
-            /*text-align: justify; */
             padding: 2% 10% 5% 10%;
+            list-style-type: none;
         }
         /*øverste p på wildlife listen */
         #wildlifeP {
@@ -138,44 +126,26 @@
             margin-right: 20%; 
             background-color: #ffffff;
         }
-        #grid-item1 h4, #grid-item2 h4 {
-            font-size: 16px;
-          }
 
         @media screen and (max-width:1115px) {
-          #wildlife {
+          #h1banner {
+            font-size: 64px;
+          }
+            #wildlife {
             position: static;
             background-color: white;
             margin: auto;
-          }
-          #tipsheader {
-            font-size:64px;
-          }
-          #tipsh2{
-            font-size: 18px;
-          }
-          h1, h2, h3{
-                font-size: 24px;
-            }
+          }  
           
         }
         @media screen and (max-width:850px) {
-          
+            #mainContainer{
+                grid-template-columns: 1fr;
+            }
         }
 
         @media screen and (max-width:640px) {
-            #tipsheader {
-            font-size:35px;
-          }
-          #grid-item1 p, #grid-item2 p, #wildlife li {
-            font-size: 12px;
-          }
-          #grid-item1 h4, #grid-item2 h4{
-            font-size: 14px;
-          }
-          #grid-item1H3, #grid-item2H3 {
-            font-size: 16px;
-        }
+          
 
         }
         @media screen and (max-width:400px) {
@@ -226,9 +196,9 @@
         <main>
             <div id="mainContainer">
                 <div id="grid-item1">
-                    <h2>
+                    <h1>
                         Best tips to prepare you for the hike
-                    </h2>
+                    </h1>
                         <h3>
                             Invest in Quality Gear ↓
                         </h3> 
@@ -280,9 +250,9 @@
                                 <br>
                 </div>
                 <div id="grid-item2">
-                    <h2>
+                    <h1>
                         Best tips of what to avoid on the hike
-                    </h2>
+                    </h1>
                         <h3>
                             Avoid Unfamiliar Plants ↓
                         </h3> 
@@ -336,23 +306,23 @@
             <br>
         <ul id="wildlife">
             <li>
-                <h2>Llamas</h2> You’ll likely encounter llamas roaming freely around Machu Picchu’s ruins. Originally used as pack animals by the Incas, llamas today contribute to the site’s unique atmosphere.
+                <h1>Llamas</h1> You’ll likely encounter llamas roaming freely around Machu Picchu’s ruins. Originally used as pack animals by the Incas, llamas today contribute to the site’s unique atmosphere.
             </li>
             <br>
             <li>
-                <h2>Spectacled Bears</h2> Known for the distinctive white markings around their eyes, spectacled bears are generally shy and harmless. Spotting one is rare, but they’re a thrilling addition to Machu Picchu’s wildlife.
+                <h1>Spectacled Bears</h1> Known for the distinctive white markings around their eyes, spectacled bears are generally shy and harmless. Spotting one is rare, but they’re a thrilling addition to Machu Picchu’s wildlife.
             </li>
             <br>
             <li>
-                <h2>Pumas</h2> Pumas are rare sightings and tend to avoid human presence. Occasionally captured on wildlife cameras, they remind visitors of the untouched nature around the ancient site.
+                <h1>Pumas</h1> Pumas are rare sightings and tend to avoid human presence. Occasionally captured on wildlife cameras, they remind visitors of the untouched nature around the ancient site.
             </li>
             <br>
             <li>
-                <h2>Snakes</h2> Although encounters are rare, some snakes in the area are venomous, so it’s wise to watch your step and be aware of your surroundings.
+                <h1>Snakes</h1> Although encounters are rare, some snakes in the area are venomous, so it’s wise to watch your step and be aware of your surroundings.
             </li>
             <br>
             <li>
-                <h2>Birdlife</h2> Machu Picchu is also home to spectacular bird species, such as the vibrant Andean cock-of-the-rock, the masked trogon, and the majestic Andean condor. The area’s rich avian life adds color and beauty to the journey.
+                <h1>Birdlife</h1> Machu Picchu is also home to spectacular bird species, such as the vibrant Andean cock-of-the-rock, the masked trogon, and the majestic Andean condor. The area’s rich avian life adds color and beauty to the journey.
             </li>
         </ul>
     </p>
