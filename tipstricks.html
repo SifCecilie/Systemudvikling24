@@ -147,6 +147,7 @@
             position: static;
             background-color: white;
             margin: auto;
+            list-style-type: none;
           }
           #tipsheader {
             font-size:64px;
@@ -160,7 +161,9 @@
           
         }
         @media screen and (max-width:850px) {
-          
+            #mainContainer{
+                grid-template-columns: 1fr;
+            }
         }
 
         @media screen and (max-width:640px) {
