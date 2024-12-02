@@ -19,15 +19,13 @@
         /* MainConatiner i main elementet (container for subpages information*/
         .shadow {
             display: grid;
-            grid-template-columns: auto auto;
-            width: 100%;
+            grid-template-columns: 50% 50%;
             filter: drop-shadow(1px 1px 15px #424242);
         }
 
         .noshadow {
             display: grid;
-            grid-template-columns: auto auto;
-            width: 100%;
+            grid-template-columns: 50% 50%;
         }
 
         article {
@@ -57,18 +55,19 @@
         }
 
         #infop {
-            margin: 0 22% 0 22%;
+            margin: auto;
+            width: 80%;
         }
 
         /* Underoverskrifter for de forskellige subpages */
         .h1_right {
             text-align: left;
-            padding: 10% 0 5% 10%;
+            padding: 10% 10% 5% 8%;
         }
 
         .h1_left {
-            text-align: left;
-            padding: 10% 0 5% 20%;
+            text-align: right;
+            padding: 10% 10% 5% 10%;
         }
 
         /* Brødtekst til subpages */
@@ -78,7 +77,7 @@
 
         #articleBoxMain {
             background-color: #e9e9e9;
-            padding: 5%;
+            padding: 5% 5% 2% 5%;
             margin-top: 3%;
         }
         #articleBox {
@@ -95,18 +94,16 @@
         #articleBox p {
             padding: 5% 5% 5% 5%;
             font-size: 50%;
-        }
-
-            figcaption{
-                padding-left: 5%;
-            }
-        
-        .grid_p{
             text-align: left;
         }
+
+        figcaption{
+            padding-left: 5%;
+        }
+        
 
         .grid_p_left {
-            text-align: left;
+            text-align: right;
         }
 
 
@@ -127,7 +124,7 @@
             }
 
             #infop {
-            margin: 0 16% 0 16%;
+            margin: auto;
             }
 
             .grid_p {
@@ -139,7 +136,6 @@
             }
 
            
-
             #articleBox img {
             width: 90%;
             height: 30%;
@@ -170,12 +166,19 @@
                 font-size: 40%;
             }
 
+            #articleBox p {
+                font-size: 60%;
+            }
+
         }
 
         @media screen and (max-width:640px) {
 
             body article header {
                 font-size: 150%;
+                width: 80%;
+                margin: auto;
+                text-align: center;
             }
 
             body article {
@@ -208,6 +211,16 @@
                 margin: 0%;
             }
 
+            #grid-item4 {
+                margin-bottom: 8%;
+            }
+
+            #grid-item1,
+            #grid-item5,
+            #grid-item8 {
+                padding-bottom: 8%;
+            }
+
            
             #mainContainer2 img{
                 padding: 0% 5% 3% 5%;
@@ -226,8 +239,13 @@
                 padding: 10% 0 5% 10%;
             }
 
+            .h1_left {
+                text-align: left;
+            }
+
             .grid_p_left {
-                padding: 0% 0 10% 10%;
+                padding: 0% 0 3% 0%;
+                text-align: left;
             }
 
             #aside2 {
@@ -245,8 +263,10 @@
                 margin: auto;
             }
 
+            #articleBox p {
+                padding-top: 2%;
+            }
 
-            
 
             #articleBox {
                 display: block;
@@ -298,22 +318,21 @@
     </div>
     <article>
         <header>
-            <h1>Information about this page</h1>
+            <h1>Welcome to MachuWay</h1>
         </header>
         <section>
             <p id="infop">
-                Welcome to MachuWay, your guide to exploring the stunning landscapes and rich history of Machu Picchu. Our website is designed to help you plan your hiking adventure with ease. You’ll find general information about the history, weather, and local customs, as well as detailed maps and a customizable checklist to prepare for your journey. We offer a collection of tips and tricks to enhance your experience, along with a FAQ section to address common questions. Whether you’re looking for advice or insights, MachuWay is here to make your adventure unforgettable.
+                Welcome to MachuWay - your guide to exploring the stunning landscapes and rich history of Machu Picchu. Our website is designed to help you plan your hiking adventure with ease. You’ll find general information about the history, weather, and local customs, as well as detailed maps over the different routes and a customizable checklist to prepare for your journey. We offer a collection of tips and tricks to enhance your experience, along with a FAQ section to address common questions. Whether you’re looking for advice or insights, MachuWay is here to make your adventure unforgettable.
             </p>
         </section>
         <aside>
-
         </aside>
     </article>
     <main>
         <div id="mainContainer">
             <div class="shadow">
                 <div id="grid-item1">
-                    <a href="information.html"><img src="images/information.avif" alt="Kvinde der ser over machu picchu" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (toppen til højre, høre til subpage 1)-->
+                    <a href="information.html"><img src="images/information.jpg" alt="Kvinde der ser over machu picchu" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (toppen til højre, høre til subpage 1)-->
                 </div>
                 <div id="grid-item2">
                     <a href="information.html"><!-- Link til der fører til en subpage -->
@@ -322,7 +341,7 @@
                         </h1>
                     </a>
                     <p class="grid_p">
-                        Discover all the essential information you need to plan your hiking adventure in the stunning landscapes of Machu Picchu. Here you can find information about historical and cultural points of interest and learn about the best seasons to visit, local customs, and other useful details to make your planning experience as smooth as possible.
+                        Discover all the essential information you need to plan your hiking adventure in the stunning landscapes of Machu Picchu. Here you can find information about historical and cultural points of interest and learn about the best seasons to visit, local customs, and other useful information to make your planning experience as smooth as possible.
                     </p>
                 </div>   
             </div>
@@ -335,28 +354,28 @@
                     </h1>
                 </a>
                 <p class="grid_p_left">
-                    Look through our collection of tips and tricks that may better prepare you for the planning. Find tips about how to pack, good hiking advice and other useful tricks that might come in handy.
+                    Look through our collection of tips and tricks that may better prepare you for the planning. Find tips on how to pack, good hiking advice and other useful tricks and advices that might come in handy.
                 </p>
                 </div>
 
                 <div id="grid-item4">
-                    <a href="tipstricks.html"><img src="images/tips and tricks.avif" alt="video med playbutton" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link der fører til en subpage og relevant billede (row 3 column 2)-->
+                    <a href="tipstricks.html"><img src="images/tips and tricks.jpg" alt="video med playbutton" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link der fører til en subpage og relevant billede (row 3 column 2)-->
                 </div>
             </div>
 
             <div class="shadow">
                  <div id="grid-item5">
-                <a href="checklist.html"><img src="images/checklist and map.avif" alt="produkter til cyklen" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (row 2 column 1)-->
+                <a href="checklist.html"><img src="images/checklist and map.jpg" alt="produkter til cyklen" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (row 2 column 1)-->
                 </div>
 
                 <div id="grid-item6">
                     <a href="checklist.html"> <!-- Link til der fører til en subpage (subpage 2) -->
                         <h1 class="h1_right">
-                            Checklist and map
+                            Routes and Checklist
                         </h1>
                     </a>
                     <p class="grid_p">
-                        Plan your hiking route with our interactive map of the hiking trails and surrounding area, to map out your hike and stay aware of nearby interesting locations. Here you will also find a nifty customizable checklist where you will be given some recommendations of what to bring for your trip.
+                        Plan your hiking route based on our detailed descriptions of the hiking trails in Machu Picchu and its surrounding area, map out your hike and stay aware of nearby interesting locations. Here you will also find a nifty customizable checklist where we have provided some recommendations of the necessities on what to bring on your trip.
                     </p>
                 </div>
             </div>
@@ -369,12 +388,12 @@
                         </h1>
                     </a>
                     <p class="grid_p_left">
-                        Here you can find and look trough all of our most frequently asked questions. This FAQ page has you covered with helpful insights and practical information to make your journey stress-free.
+                        Here you can find and read  all of our most frequently asked questions. This FAQ page has you covered with helpful insights and practical information to make your journey stress-free.
                     </p>
                 </div>
 
                 <div id="grid-item8">
-                    <a href="faq.html"><img src="images/FAQ.avif" alt="spørgsmålstegn" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link der fører til en subpage og relevant billede (row 4 column 1)-->
+                    <a href="faq.html"><img src="images/FAQ.jpg" alt="spørgsmålstegn" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link der fører til en subpage og relevant billede (row 4 column 1)-->
                 </div>
             </div>
         </div>
@@ -388,28 +407,28 @@
                         </h1>
                     </a>
                     <p class="grid_p">
-                        Discover all the essential information you need to plan your hiking adventure in the stunning landscapes of Machu Picchu. Here you can find information about historical and cultural points of interest and learn about the best seasons to visit, local customs, and other useful details to make your planning experience as smooth as possible.
+                        Discover all the essential information you need to plan your hiking adventure in the stunning landscapes of Machu Picchu. Here you can find information about historical and cultural points of interest and learn about the best seasons to visit, local customs, and other useful information to make your planning experience as smooth as possible.
                     </p>
                 </div> 
                 <div id="grid-item1">
-                    <a href="information.html"><img src="images/information.avif" alt="Kvinde der ser over machu picchu" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (toppen til højre, høre til subpage 1)-->
+                    <a href="information.html"><img src="images/information.jpg" alt="Kvinde der ser over machu picchu" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (toppen til højre, høre til subpage 1)-->
                 </div>  
             </div>
             
             <div class="noshadow">
                 <div id="grid-item3">
-                <a href="checklist.html"> <!-- Link til der fører til en subpage (subpage 2) -->
-                    <h1 class="h1_left">
-                        Checklist and map
-                    </h1>
-                </a>
-                <p class="grid_p_left">
-                    Plan your hiking route with our interactive map of the hiking trails and surrounding area, to map out your hike and stay aware of nearby interesting locations. Here you will also find a nifty customizable checklist where you will be given some recommendations of what to bring for your trip.
-                </p>
+                    <a href="tipstricks.html"> <!-- Link der fører til en subpage (subpage 3) -->
+                        <h1 class="h1_right">
+                            Tips and tricks
+                        </h1>
+                    </a>
+                    <p class="grid_p">
+                        Look through our collection of tips and tricks that may better prepare you for the planning. Find tips on how to pack, good hiking advice and other useful tricks and advices that might come in handy.
+                    </p>
                 </div>
 
                 <div id="grid-item4">
-                    <a href="checklist.html"><img src="images/checklist and map.avif" alt="produkter til cyklen" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (row 2 column 1)-->
+                    <a href="tipstricks.html"><img src="images/tips and tricks.jpg" alt="video med playbutton" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link der fører til en subpage og relevant billede (row 3 column 2)-->
                 </div>
             </div>
 
@@ -417,17 +436,18 @@
                  
 
                 <div id="grid-item6">
-                    <a href="tipstricks.html"> <!-- Link der fører til en subpage (subpage 3) -->
-                        <h1 class="h1_right">
-                            Tips and tricks
+                    <a href="checklist.html"> <!-- Link til der fører til en subpage (subpage 2) -->
+                        <h1 class="h1_left">
+                            Routes and Checklist
                         </h1>
                     </a>
-                    <p class="grid_p">
-                        Look through our collection of tips and tricks that may better prepare you for the planning. Find tips about how to pack, good hiking advice and other useful tricks that might come in handy.
+                    <p class="grid_p_left">
+                        Plan your hiking route with our interactive map of the hiking trails and surrounding area, to map out your hike and stay aware of nearby interesting locations. Here you will also find a nifty customizable checklist where you will be given some recommendations of what to bring for your trip.
                     </p>
                 </div>
                 <div id="grid-item5">
-                    <a href="tipstricks.html"><img src="images/tips and tricks.avif" alt="video med playbutton" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link der fører til en subpage og relevant billede (row 3 column 2)-->
+                    
+                    <a href="checklist.html"><img src="images/checklist and map.jpg" alt="produkter til cyklen" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (row 2 column 1)-->
                     </div>
             </div>
            
@@ -439,12 +459,12 @@
                         </h1>
                     </a>
                     <p class="grid_p_left">
-                        Here you can find and look trough all of our most frequently asked questions. This FAQ page has you covered with helpful insights and practical information to make your journey stress-free.
+                        Here you can find and read  all of our most frequently asked questions. This FAQ page has you covered with helpful insights and practical information to make your journey stress-free.
                     </p>
                 </div>
 
                 <div id="grid-item8">
-                    <a href="faq.html"><img src="images/FAQ.avif" alt="spørgsmålstegn" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link der fører til en subpage og relevant billede (row 4 column 1)-->
+                    <a href="faq.html"><img src="images/FAQ.jpg" alt="spørgsmålstegn" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link der fører til en subpage og relevant billede (row 4 column 1)-->
                 </div>
             </div>
         </div>
@@ -456,21 +476,21 @@
                             <h2>History</h2>
                             <img src="images/article1.jpg" class="artikel"></a>
                             <figcaption>By: history.com</figcaption>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorum dolores veniam voluptatem est impedit eos perspiciatis deserunt beatae. Laboriosam aspernatur minima quod nisi consequatur maiores nostrum reprehenderit illum pariatur?
+                            <p>Machu Picchu is filled with rich history that will take you through time all the way to the Inca civilization. This citadel was only discovered in the early 1900s, and has been a mystery ever since! Discover more of humanity's great archeological abilities and wonders here!
                         </div>
                         <div>
                             <a href="https://www.euronews.com/tag/machu-picchu" target=”_blank”>
                             <h2>News</h2>
                             <img src="images/article2.jpg" alt="something" class="artikel"></a>
                             <figcaption>By: euronews.com</figcaption>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorum dolores veniam voluptatem est impedit eos perspiciatis deserunt beatae. Laboriosam aspernatur minima quod nisi consequatur maiores nostrum reprehenderit illum pariatur?
+                            <p>Want to learn more about Machu Picchu political and cultural news? Keep yourself updated on the latest news and information from Machu Picchu directly.  
                         </div>
                         <div>
                             <a href="https://www.history.com/topics/south-america/machu-picchu" target=”_blank”>
                             <h2>Attractions</h2>
                             <img src="images/article3.jpg" alt="something" class="artikel"></a>
                             <figcaption>By: rainforestcruises.com</figcaption>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolorum dolores veniam voluptatem est impedit eos perspiciatis deserunt beatae. Laboriosam aspernatur minima quod nisi consequatur maiores nostrum reprehenderit illum pariatur?
+                            <p>Do not miss out on Machu Picchu's must-see places and its most beautiful attractions - it is a once-in-a-lifetime experience! Discover all its beauty and attractions here. 
                         </div>
                     </div>
             </div>
