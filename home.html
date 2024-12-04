@@ -11,16 +11,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>MachuWay</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <style>      
-        #up{
-            margin-left: 2%;
+    <style>  
+
+        article {
+            padding: 50px 0 100px 0;
+            text-align: center;
+            margin: auto;
+            width: 80%;
         }
 
-        /* MainConatiner i main elementet (container for subpages information*/
         .shadow {
             display: grid;
             grid-template-columns: 50% 50%;
             filter: drop-shadow(1px 1px 15px #424242);
+        }
+
+        #grid-item1,
+        #grid-item2 {
+            background-color: #7d9b76;
+            margin-bottom: 2%;
+        }
+
+        #gridPic {
+            height: 100%; 
+            width: 100%; 
+            object-fit: cover; 
+            float: left;
+        }
+
+        .h1_right {
+            text-align: left;
+            padding: 10% 10% 5% 8%;
         }
 
         .noshadow {
@@ -28,23 +49,9 @@
             grid-template-columns: 50% 50%;
         }
 
-        article {
-            padding: 100px 0 100px 0;
-        }
-
-
-        #mainContainer {
-            text-align: center;
-        }
-
-        #mainContainer2 {
-            display: none;
-        }
-
-        #grid-item1,
-        #grid-item2 {
-            background-color: #7d9b76;
-            margin-bottom: 2%;
+        .h1_left {
+            text-align: right;
+            padding: 10% 10% 5% 10%;
         }
 
         #grid-item5,
@@ -54,25 +61,17 @@
             margin-bottom: 2%;
         }
 
-        #infop {
-            margin: auto;
-            width: 80%;
-        }
-
-        /* Underoverskrifter for de forskellige subpages */
-        .h1_right {
-            text-align: left;
-            padding: 10% 10% 5% 8%;
-        }
-
-        .h1_left {
-            text-align: right;
-            padding: 10% 10% 5% 10%;
-        }
-
-        /* Brødtekst til subpages */
-        main p {
+        .grid_p{
             font-size: 70%;
+        }
+        
+        .grid_p_left {
+            text-align: right;
+            font-size: 70%;
+        }
+
+        #mainContainer2 {
+            display: none;
         }
 
         #articleBoxMain {
@@ -83,7 +82,6 @@
         #articleBox {
             display: grid;
             grid-template-columns: 33% 33% 33%;
-            width: 100%;
         }
 
         #articleBox img{
@@ -91,21 +89,20 @@
             height: 40%;
         }
 
+        figcaption{
+            padding-left: 5%;
+            font-size: 50%;
+        }
+
         #articleBox p {
-            padding: 5% 5% 5% 5%;
+            padding: 2% 5% 5% 5%;
             font-size: 50%;
             text-align: left;
         }
 
-        figcaption{
-            padding-left: 5%;
+        #up{
+            margin-left: 2%;
         }
-        
-
-        .grid_p_left {
-            text-align: right;
-        }
-
 
         @media screen and (max-width:1115px) {
 
@@ -113,86 +110,28 @@
                 font-size: 90%;
             }
 
-            #h1banner{
-                font-size: 64px;
-                margin: -230px 0 160px 0;
-            }
-
-            #pbanner{
-                font-size: 18px;
-                margin: -190px 0 70px 0;
-            }
-
-            #infop {
-            margin: auto;
-            }
-
-            .grid_p {
-                width: 85%;
-            }
-
-            #articleBox p {
-                font-size: 75%;
-            }
-
-           
-            #articleBox img {
-            width: 90%;
-            height: 30%;
-            }
-
-            h1, h2, .h1_right, .h1_left{
-                font-size: 24px;
-            }
-
-
-            body article {
-                max-width: 100%;
-            }
-
-            main {
-                width: 100%;
-            }
-        }
-
-        @media screen and (max-width:850px) {
-
-            #articleBox img {
-            width: 90%;
-            height: 20%;
-            }
-
-            #articleBox figcaption {
-                font-size: 40%;
+            article h1 {
+                padding-top: 8%;
             }
 
             #articleBox p {
                 font-size: 60%;
             }
 
+            #articleBox img {
+            height: 35%;
+            }
+        }
+
+        @media screen and (max-width:850px) {
+
+            #articleBox img {
+            height: 30%;
+            }
+
         }
 
         @media screen and (max-width:640px) {
-
-            body article header {
-                font-size: 150%;
-                width: 80%;
-                margin: auto;
-                text-align: center;
-            }
-
-            body article {
-                margin-top: 2%;
-            }
-
-            #infop {
-            margin: 0 11% 0 11%;
-            }
-
-
-            article aside {
-                display: none;
-            }
 
             #mainContainer {
                 display: none;
@@ -200,32 +139,17 @@
 
             #mainContainer2 {
                 display: block;
-                padding-bottom: 0%;
             }
-            
 
-            #grid-item1,
             #grid-item2,
             #grid-item5,
             #grid-item6 {
                 margin: 0%;
             }
 
-            #grid-item4 {
-                margin-bottom: 8%;
-            }
-
-            #grid-item1,
-            #grid-item5,
-            #grid-item8 {
-                padding-bottom: 8%;
-            }
-
-           
             #mainContainer2 img{
-                padding: 0% 5% 3% 5%;
+                padding: 0% 5% 8% 5%;
             }
-
 
             .shadow {
             grid-template-columns: auto;
@@ -235,38 +159,13 @@
                 grid-template-columns: auto;
             }
 
-            .h3_left {
-                padding: 10% 0 5% 10%;
-            }
-
-            .h1_left {
+            #mainContainer2 h1 {
                 text-align: left;
             }
 
-            .grid_p_left {
-                padding: 0% 0 3% 0%;
+            #mainContainer2 p {
                 text-align: left;
             }
-
-            #aside2 {
-                width: 50%;
-                display: block;
-                margin-bottom: 7%;
-            }
-
-            body main h1 {
-                font-size: 100%;
-            }
-
-            figure img {
-                width: 90%;
-                margin: auto;
-            }
-
-            #articleBox p {
-                padding-top: 2%;
-            }
-
 
             #articleBox {
                 display: block;
@@ -280,24 +179,14 @@
         
         @media screen and (max-width:400px) {
 
-            
+           #articleBox h2 {
+            font-size: medium;
+           }
 
-            #mainContainer {
-                display: none;
-            }
-
-            #mainContainer2 p{
-                display: block;
-                text-align: left;
-            }
         }
-
-
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-
-        // kalder på navbar og footer 
         $(document).ready(function () {
             $('#hovedmenu').load("nav.html");
             $('#kontakt').load("footer.html");
@@ -306,36 +195,34 @@
     </script>
 </head>
     <header>
-        <nav id="hovedmenu"> <!-- Navigationsbar -->
+        <nav id="hovedmenu">
         </nav>
     </header>
-    <div id="banner">
+    <div>
         <figure>
-            <img id="mainPic" src="images/homepage background.jpg" alt="man biking in mountains" class="center"/>
+            <img id="mainPic" src="images/homepage background.jpg" class="center" alt="Machu Picchu"/>
         </figure>
-        <h1 id="h1banner">MachuWay</h1>
-        <p id="pbanner">Your ultimate guide for hiking in Machu Picchu</p>
+        <h1 id="h1banner">
+            MachuWay
+        </h1>
+        <p id="pbanner">
+            Your ultimate guide for hiking in Machu Picchu
+        </p>
     </div>
     <article>
-        <header>
             <h1>Welcome to MachuWay</h1>
-        </header>
-        <section>
-            <p id="infop">
+            <p>
                 Welcome to MachuWay, your guide to exploring the stunning landscapes and rich history of Machu Picchu. Our website is designed to help you plan your hiking adventure with ease. You’ll find general information about the history, weather, and local customs, as well as detailed maps and a customizable checklist to prepare for your journey. We offer a collection of tips and tricks to enhance your experience, along with a FAQ section to address common questions. Whether you’re looking for advice or insights, MachuWay is here to make your adventure unforgettable.
             </p>
-        </section>
-        <aside>
-        </aside>
     </article>
     <main>
         <div id="mainContainer">
             <div class="shadow">
                 <div id="grid-item1">
-                    <a href="information.html"><img src="images/information.jpg" alt="Kvinde der ser over machu picchu" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (toppen til højre, høre til subpage 1)-->
+                    <a href="information.html"><img id="gridPic" src="images/information.jpg" alt="Kvinde der ser over machu picchu" class="center"></a>
                 </div>
                 <div id="grid-item2">
-                    <a href="information.html"><!-- Link til der fører til en subpage -->
+                    <a href="information.html">
                         <h1 class="h1_right">
                             Information
                         </h1>
@@ -348,7 +235,7 @@
             
             <div class="noshadow">
                 <div id="grid-item3">
-                <a href="tipstricks.html"> <!-- Link der fører til en subpage (subpage 3) -->
+                <a href="tipstricks.html">
                     <h1 class="h1_left">
                         Tips and tricks 
                     </h1>
@@ -359,17 +246,17 @@
                 </div>
 
                 <div id="grid-item4">
-                    <a href="tipstricks.html"><img src="images/tips and tricks.jpg" alt="video med playbutton" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link der fører til en subpage og relevant billede (row 3 column 2)-->
+                    <a href="tipstricks.html"><img id="gridPic" src="images/tips and tricks.jpg" alt="Hiking gear i naturen" class="center"></a>
                 </div>
             </div>
 
             <div class="shadow">
                  <div id="grid-item5">
-                <a href="checklist.html"><img src="images/checklist and map.jpg" alt="produkter til cyklen" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (row 2 column 1)-->
+                <a href="checklist.html"><img id="gridPic" src="images/checklist and map.jpg" alt="Hiking gear" class="center"></a>
                 </div>
 
                 <div id="grid-item6">
-                    <a href="checklist.html"> <!-- Link til der fører til en subpage (subpage 2) -->
+                    <a href="checklist.html">
                         <h1 class="h1_right">
                             Routes and Checklist
                         </h1>
@@ -382,7 +269,7 @@
            
             <div class="noshadow">
                 <div id="grid-item7">
-                    <a href="faq.html"><!--relevant link (subpage 4)-->
+                    <a href="faq.html">
                         <h1 class="h1_left">
                             FAQ
                         </h1>
@@ -393,15 +280,18 @@
                 </div>
 
                 <div id="grid-item8">
-                    <a href="faq.html"><img src="images/FAQ.jpg" alt="spørgsmålstegn" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link der fører til en subpage og relevant billede (row 4 column 1)-->
+                    <a href="faq.html"><img id="gridPic" src="images/FAQ.jpg" alt="Mand der sider og kigger på computer" class="center"></a>
                 </div>
             </div>
         </div>
 
+
+
+        
         <div id="mainContainer2">
             <div class="shadow">
                 <div id="grid-item2">
-                    <a href="information.html"><!-- Link til der fører til en subpage -->
+                    <a href="information.html">
                         <h1 class="h1_right">
                             Information
                         </h1>
@@ -411,13 +301,13 @@
                     </p>
                 </div> 
                 <div id="grid-item1">
-                    <a href="information.html"><img src="images/information.jpg" alt="Kvinde der ser over machu picchu" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (toppen til højre, høre til subpage 1)-->
+                    <a href="information.html"><img id="gridPic" src="images/information.jpg" alt="Kvinde der ser over machu picchu" class="center"></a>
                 </div>  
             </div>
             
             <div class="noshadow">
                 <div id="grid-item3">
-                    <a href="tipstricks.html"> <!-- Link der fører til en subpage (subpage 3) -->
+                    <a href="tipstricks.html">
                         <h1 class="h1_right">
                             Tips and tricks
                         </h1>
@@ -426,17 +316,13 @@
                         Look through our collection of tips and tricks that may better prepare you for the planning. Find tips on how to pack, good hiking advice and other useful tricks and advices that might come in handy. Here you will also find information about the wildlife in the Machu Picchu.
                     </p>
                 </div>
-
                 <div id="grid-item4">
-                    <a href="tipstricks.html"><img src="images/tips and tricks.jpg" alt="video med playbutton" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link der fører til en subpage og relevant billede (row 3 column 2)-->
+                    <a href="tipstricks.html"><img id="gridPic" src="images/tips and tricks.jpg" alt="Hiking gear in nature" class="center"></a>
                 </div>
             </div>
-
             <div class="shadow">
-                 
-
                 <div id="grid-item6">
-                    <a href="checklist.html"> <!-- Link til der fører til en subpage (subpage 2) -->
+                    <a href="checklist.html">
                         <h1 class="h1_left">
                             Routes and Checklist
                         </h1>
@@ -447,13 +333,13 @@
                 </div>
                 <div id="grid-item5">
                     
-                    <a href="checklist.html"><img src="images/checklist and map.jpg" alt="produkter til cyklen" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (row 2 column 1)-->
+                    <a href="checklist.html"><img id="gridPic" src="images/checklist and map.jpg" alt="produkter til cyklen" class="center"></a>
                     </div>
             </div>
            
             <div class="noshadow">
                 <div id="grid-item7">
-                    <a href="faq.html"><!--relevant link (subpage 4)-->
+                    <a href="faq.html">
                         <h1 class="h1_left">
                             FAQ
                         </h1>
@@ -464,7 +350,7 @@
                 </div>
 
                 <div id="grid-item8">
-                    <a href="faq.html"><img src="images/FAQ.jpg" alt="spørgsmålstegn" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link der fører til en subpage og relevant billede (row 4 column 1)-->
+                    <a href="faq.html"><img id="gridPic" src="images/FAQ.jpg" alt="spørgsmålstegn" class="center"></a>
                 </div>
             </div>
         </div>
@@ -474,21 +360,21 @@
                         <div>
                             <a href="https://www.euronews.com/tag/machu-picchu" target=”_blank”>
                             <h2>News</h2>
-                            <img src="images/article2.jpg" alt="something" class="artikel"></a>
+                            <img src="images/article2.jpg" alt="something"></a>
                             <figcaption>By: euronews.com</figcaption>
                             <p>Want to learn more about Machu Picchu's political and cultural news? Keep yourself updated on the latest news and information from Machu Picchu directly.  
                         </div>
                         <div>
                             <a href="https://www.history.com/topics/south-america/machu-picchu" target=”_blank”>
                             <h2>History</h2>
-                            <img src="images/article1.jpg" class="artikel"></a>
+                            <img src="images/article1.jpg"></a>
                             <figcaption>By: history.com</figcaption>
-                            <p>Machu Picchu is filled with rich history that will take you back in time all the way to the Inca civilization. This citadel was only discovered in the early 1900s, and has been a mystery ever since! Discover more of humanity's great archeological abilities and wonders here!
+                            <p>Machu Picchu is filled with rich history that will take you back in time all the way to the Inca civilization. Discover more of humanity's great archeological abilities and wonders here!
                         </div>
                         <div>
                             <a href="https://www.history.com/topics/south-america/machu-picchu" target=”_blank”>
                             <h2>Attractions</h2>
-                            <img src="images/article3.jpg" alt="something" class="artikel"></a>
+                            <img src="images/article3.jpg" alt="something"></a>
                             <figcaption>By: rainforestcruises.com</figcaption>
                             <p>Do not miss out on Machu Picchu's must-see places and its most beautiful attractions - it is a once-in-a-lifetime experience! Discover all its beauty and attractions here. 
                         </div>
