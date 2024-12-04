@@ -23,7 +23,7 @@
         /* Area med tips  */
         body article {
             width: 100%;
-            padding: 60px;
+            padding: 6%;
         }
 
         body figure {
@@ -45,7 +45,7 @@
             font-weight: lighter;
             margin: auto;
             text-align: center;
-            font-size: 16px;
+            font-size: 100%;
         }
 
         article section p {
@@ -58,7 +58,7 @@
             font-weight: lighter;
             margin: auto;
             text-align: center;
-            font-size: 16px;
+            font-size: 100%;
         }
 
         main h3+* {
@@ -74,7 +74,7 @@
             font-weight: lighter;
             margin: auto;
             text-align: center;
-            font-size: 16px;
+            font-size: 50%;
         }
         #grid-item1
         {
@@ -92,6 +92,10 @@
             height: 100%;
             padding: 5%;
             margin: 3%;
+        }
+        #mainPic {
+            object-fit: cover; 
+            object-position: 100% 70%;
         }
         /*header i den nederste boks med tricks */
         #hikingtricksH1 {
@@ -114,7 +118,9 @@
             padding-bottom: 2%; 
             padding-top: 8%; 
         }
-
+        #headerP {
+            margin: 0% 12% 5% 12%;
+        }
         ul h1 {
             padding: 5% 0 3% 0;
         }
@@ -130,7 +136,12 @@
             margin-right: 20%; 
             background-color: #ffffff;
         }
+        #wildLifeImage {
+            height: 60%; 
+            width: 65%;  
+        }
 
+      
         @media screen and (max-width:1115px) {
           #h1banner {
             font-size: 64px;
@@ -149,10 +160,21 @@
         }
 
         @media screen and (max-width:640px) {
-          
+          #mainPic {
+            height: auto;
+          }
 
         }
-        @media screen and (max-width:400px) {
+        @media screen and (max-width:400px) {  
+            body article {
+            padding: 0;
+          } 
+          #mainContainer h3{
+            font-size: 100%;
+          }
+          #hikingtricksH1 {
+            font-size: 110%;
+          }
         }
         
 </style>
@@ -180,7 +202,7 @@
         </nav>
     </header>
     <figure>
-        <img id="mainPic" src="images/mainTips.jpg" alt="Picture of Machu Picchu" class="center" style="height: 400px;"/>
+        <img id="mainPic" src="images/mainTips.jpg" alt="Picture of Machu Picchu" class="center"/>
     </figure>
     <h1 id="h1banner">Tips and Tricks</h1>
     <p id="pbanner">The dos and the don'ts</p>
@@ -188,9 +210,9 @@
 <article>
     <section>
     <header>
-        <h1 style="padding-bottom: 40px; padding-top: 50px;">How is hiking in Machu Picchu</h1>
+        <h1>How is hiking in Machu Picchu</h1>
     </header>
-        <p style="margin: 0% 12% 5% 12%;">
+        <p id="headerP">
             Hiking in Machu Picchu offers an unforgettable adventure but also presents physical challenges. The journey takes you through rugged terrain, including steep stone steps, hills, and high mountain passes, and the difficulty level is generally regarded as moderate. Preparing yourself is key, both in terms of physical readiness and quality equipment.
             <br>
             <br>
@@ -272,7 +294,7 @@
                             </p>
                                 <br>
                         <h3>
-                            Don't pack to much or to little ↓
+                            Don't pack too much or too little ↓
                         </h3> 
                             <p>
                                 Avoid overpacking or underpacking. Stick to essentials and avoid unnecessary items, but don’t skip on what you’ll need for safety and comfort
@@ -303,8 +325,8 @@
             <br>
             <br>
             <br>
-            <div id="wildLifeImage">
-                <img src="images/wildLife.jpg" alt="Tegning a inca empire" class="center" style="height: 60%; width: 65%;"></a> <!-- Link til der fører til en subpage og relevant billede (toppen til højre, høre til subpage 1)-->
+            <div>
+                <img id="wildLifeImage" src="images/wildLife.jpg" alt="Tegning a inca empire" class="center"></a> <!-- Link til der fører til en subpage og relevant billede (toppen til højre, høre til subpage 1)-->
             </div>
             <br>
             <br>
