@@ -15,6 +15,7 @@
 
         #up{
             margin-left: 2%;
+            position: relative;
         }
 
         a:hover {
@@ -47,6 +48,9 @@
             padding: 4%;
             margin: 2%;
         }
+        #grid-item1 img{
+            width: 100%;
+        }
 
         #grid-item2
         {
@@ -64,6 +68,14 @@
         #grid-item2-small{
              display: none;   
             }
+
+        #checklistHeader h1{
+            margin-top: 5%;
+            padding-bottom: 0.5%;
+        }
+        #checklistHeader h2{
+            padding: 0;
+        }
 
         #checklistContainer {
             display: grid;
@@ -167,6 +179,11 @@
             display: none;
         }
 
+        #infoChecklist{
+            margin: 0 15% 0 15%;
+            padding-bottom: 1%;
+        }
+
         @media screen and (max-width:1115px){
             #grid-item2{
                 display: none;
@@ -191,9 +208,15 @@
                 size: 200%;
                 font-weight: bold;
             }
-            #h1banner {
+            #h1banner{
                 font-size: 64px;
+                margin: -230px 0 160px 0;
             }
+            #pbanner{
+                font-size: 18px;
+                margin: -190px 0 70px 0;
+            }
+
         }
         @media screen and (max-width:850px){
             #mainContainer{
@@ -210,6 +233,17 @@
 
             #grid-item4, h3 {
                 color: #272727;
+            }
+        }
+        @media screen and (max-width:400px){
+            h3{
+                font-size: 4vw;
+            }
+            h2{
+                font-size: 4.5vw;
+            }
+            article{
+                padding-top: 0;
             }
         }
 
@@ -257,10 +291,10 @@
             <h1>Map and information on routes</h1>
             <div id="mainContainer">
                 <div id="grid-item1"><br>
-                        <img class="routeMaps" src="images/map1.jpg" style="width:100%">
-                        <img class="routeMaps" src="images/map2.jpg" style="width:100%">
-                        <img class="routeMaps" src="images/map3.jpg" style="width:100%">
-                        <img class="routeMaps" src="images/map4.jpg" style="width:100%">
+                        <img class="routeMaps" src="images/map1.jpg">
+                        <img class="routeMaps" src="images/map2.jpg">
+                        <img class="routeMaps" src="images/map3.jpg">
+                        <img class="routeMaps" src="images/map4.jpg">
                         <button id="rightButton" onclick="plusDivs(-1)">&#10094;</button>
                         <button id="leftButton" onclick="plusDivs(1)">&#10095;</button>
                 </div>
@@ -353,20 +387,16 @@
                             Difficulty: arguably the most difficult trek to Machu Picchu, long trekking days and many high passes<br><br>
                             Click <a href="https://www.machupicchutrek.net/vilcabamba-trek/" target=”_blank”>here</a> for a link to the route.
                         </p>
-                </div>
+                </div><br>
             </div>
         </main>
-        <header>
-            <br><br><br><br><br><br>
+        <header id="checklistHeader">
             <h1> We've made a checklist for you</h1>
-            <h2 style="padding-bottom: 1%;">But feel free to customize it</h2>
+            <h2>But feel free to customize it</h2>
         </header>
         <br>
-        <p style=" margin-left: 15%; margin-right: 15%;">
+        <p id="infoChecklist">
             Below on the left side, you will find 4 different checklists related to the selected route. There are both our recommendations for food and hydration, according to the choosen route, and what gear is needed. On the right side you find the personalized checklist, where you can add items from our recommended checlist, simply by clicking on the item you want. You can also add stuff that you might find necessary, and if you added an item, but don't need it anyway, just dobbleclick the item, you want removed. When you finished it simply download the list to your device, and if you want to modify it later, click the 'Choose File' button, and upload the downloadet list from your device. Enjoy! 
-            <br>
-            <br>
-            <br>
             <div id="checklistContainer">
                 <div id="grid-item3">
                     <button type="button" onclick="showChecklist('checklist1')">1</button>
