@@ -12,145 +12,92 @@
     <title>MachuWay</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <style>
-        #up{
-            margin-left: 2%;
-        }
-
-        a:hover {
-            opacity: 0.6;
-        }
-
-        /* Area med tips  */
-        body article {
-            width: 100%;
-            padding: 60px;
-        }
-
-        body figure {
-            width: 100%;
-            margin: auto;
-        }
-
-        #article {
-            padding: 0px 0 100px 0;
-        }
 
         /* brødteksten i article */
         article section {
-            width: 100%;
-            font-weight: lighter;
-            margin: auto;
             text-align: center;
-            font-size: 16px;
-        }
-
-        article section p {
-            text-align: justify;
-            text-align: center;
+            margin-bottom: 8%;
         }
 
         article main p {
             width: 90%;
-            font-weight: lighter;
             margin: auto;
-            text-align: center;
-            font-size: 16px;
         }
 
         #mainContainer {
             display: grid;
             grid-template-columns: auto auto;
-            width: 100%;
-            height: 100%;
-            font-weight: lighter;
-            margin: auto;
-            text-align: center;
-            font-size: 16px;
-        }
-        #grid-item1,
-        #grid-item2
-         {
-            text-align: center;
-            height: 100%;
-            padding-bottom: 10%;
-
+            font-size: 57%;
         }
 
-        .box {
+        #incaPic {
+            height: 100%; 
+            width: 100%; 
+            object-fit: cover; 
+            float: left;
+        }
+
+        .boxI {
+            padding: 8% 12% 8% 12%;
+        }
+
+        .boxM {
             padding: 5% 12% 5% 12%;
         }
 
-        .boxmargin {
-            padding: 4% 12% 4% 12%;
-            margin: 0% 13% 0% 13%;
+        .boxW {
+            padding: 5% 12% 5% 12%;
+            background-color: #7d9b76;
+            margin-top: 8%;
+
         }
 
+        .boxmarginE {
+            padding: 4% 12% 4% 12%;
+            margin: 0% 13% 0% 13%;
+            background-color: #dc9b5a;
+        }
 
+        .boxmarginA {
+            padding: 4% 12% 4% 12%;
+            margin: 8% 13% 0% 13%;
+            background-color: #457d58;
+        }
+
+        #up{
+            margin-left: 2%;
+        }
 
         @media screen and (max-width:1115px) {
+            
             * {
                 font-size: 90%;
             }
 
-            #h1banner{
-                font-size: 64px;
-                margin: -230px 0 160px 0;
-            }
-
-            #pbanner{
-                font-size: 18px;
-                margin: -190px 0 70px 0;
-            }
-
-            .box {
-            padding: 8% 12% 8% 12%;
-        }
-
-    
-
         }
 
         @media screen and (max-width: 840px) {
+
             #mainContainer {
                 grid-template-columns: auto;
             }
 
-            #bannerh1 {
-                margin: -250px 2% 90px 2%;
-                font-size: 64px;
-            }
-
-            ul {
-                position: static;
-                display: block; /* Ensure it is visible */
-                right: auto; /* Reset position */
-            }
-
-            .boxmargin {
-                width: 90%;
-                margin: auto;
-                margin-bottom: 6%;
+            #grid-item2 {
+                margin-top: 6%;
             }
 
         }
 
         @media screen and (max-width:640px) {
 
-            #grid-item1{
-                padding-bottom: 4%;
+            .boxI {
+                padding-top: 0%;
             }
 
-            ul li {
-                margin: 20px 0;
-            }
-            
-            ul li a {
-                font-size: 20px;
+            h1 {
+                font-weight:600;
             }
 
-           
-
-    
         }
         
 </style>
@@ -168,19 +115,18 @@
 </head>
 <body>
     <header>
-        <nav id="hovedmenu"> <!-- Navigationsbar -->
+        <nav id="hovedmenu">
         </nav>
     </header>
     <div>
     <figure>
-        <img id="mainPic" src="images/infoMain.jpg" alt="Picture of Machu Picchu" class="center" style="object-fit: cover;  object-position: 100% 100%;"/>
+        <img id="mainPic" src="images/infoMain.jpg" alt="Picture of Machu Picchu" class="center">
     </figure>
     <h1 id="h1banner">Relevant information</h1>
     <p id="pbanner">Good to know before you go</p>
 </div>
-<article id="article">
-    <section>
-    <div class="box">
+<article>
+    <div class="boxI">
         <header>
             <h1>Hiking in general</h1>
         </header>
@@ -189,13 +135,15 @@
         </p>  
     </div>
     
-    <div class="boxmargin" style="background-color: #dc9b5a;">
+    <div class="boxmarginE">
         <header>
             <h1>Incase of emergency</h1>
         </header>
         <p>
             <br>
-            You can never feel too safe, especially when you are entering unknown ground. If you or your travel buddy is in any need of emergency assistance, call the national emergency number 105, or call 911, as that will also work, so you can get in touch with the police. If you want to call an ambulance, call the number  106. <br>For more information click <a href="https://qoriankatours.com/emergency-telephone-numbers-in-peru/" target=”_blank” style="font-weight: bold; color: black;">here</a>        
+            You can never feel too safe, especially when you are entering unknown ground. If you or your travel buddy is in any need of emergency assistance, call the national emergency number 105, or call 911, as that will also work, so you can get in touch with the police. If you want to call an ambulance, call the number  106. 
+            <br>
+            For more information click <a href="https://qoriankatours.com/emergency-telephone-numbers-in-peru/" target=”_blank” style="font-weight: bold; color: black;">here</a>        
             <br>
             <br>
             If you or someone you are with is in need of a hospital or need to talk to the Danish Consulate General, we have  listed the relevant addresses below. 
@@ -212,11 +160,11 @@
             <br>
             <br>
             <br>   
-            The hospitals are located close to Machu Picchu, and if you need the Danish Consulate General in Peru, then know that it is located in the capital, Lima. The address is <a href="https://www.google.com/maps/place/C.+Bernardo+Monteagudo+201,+San+Isidro+15076,+Peru/@-12.0966294,-77.0597278,15.63z/data=!4m6!3m5!1s0x9105c9ad6fb27cf9:0xdec21769935d1720!8m2!3d-12.0971995!4d-77.0585376!16s%2Fg%2F11j1ld7zh9?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D" target=”_blank” style="font-weight: bold; color: black;">Generalkonsul José Antonio Olaechea, Bernardo Monteagudo 201, San Isidro, Lima </a> and for more information click <a href="https://chile.um.dk/om-os/danske-konsultater-i-peru" target=”_blank” style="font-weight: bold; color: black;">here </a>
+            The hospitals are located close to Machu Picchu, and if you need the Danish Consulate General in Peru, then know that it is located in the capital, Lima. The address is <a href="https://www.google.com/maps/place/C.+Bernardo+Monteagudo+201,+San+Isidro+15076,+Peru/@-12.0966294,-77.0597278,15.63z/data=!4m6!3m5!1s0x9105c9ad6fb27cf9:0xdec21769935d1720!8m2!3d-12.0971995!4d-77.0585376!16s%2Fg%2F11j1ld7zh9?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D" target=”_blank” style="font-weight: bold; color: black;"> Generalkonsul José Antonio Olaechea, Bernardo Monteagudo 201, San Isidro, Lima </a> and for more information click <a href="https://chile.um.dk/om-os/danske-konsultater-i-peru" target=”_blank” style="font-weight: bold; color: black;">here </a>
         </p>
     </div>
    
-    <div class="box">
+    <div class="boxM">
         <header>
             <h1>Machu Picchu</h1>
         </header>
@@ -229,23 +177,22 @@
     <main>
         <div id="mainContainer">
             <div id="grid-item1">
-                <img src="images/inca.jpg" alt="Tegning a inca empire" class="center" style="height: 100%; width: 100%; object-fit: cover; float: left;"></a> <!-- Link til der fører til en subpage og relevant billede (toppen til højre, høre til subpage 1)-->
+                <img id="incaPic" src="images/inca.jpg" alt="Tegning a inca empire" class="center"></a>
             </div>
             <div id="grid-item2">
                     <h1>
                         The Inca Empire
                     </h1>
-                </a>
-                <p>
                     <br>
+                <p>
                     The Inca Empire built an extensive network of roads known as the <a href="https://whc.unesco.org/en/list/1459/" target=”_blank” style="font-weight: bold; color: black;">Qhapaq Ñan</a>, which connected their vast territory. The Inca Trail to Machu Picchu is part of this network and was originally used for religious pilgrimages, communication, and military purposes. These roads allowed the Incas to efficiently manage their empire and transport goods, messages, as well as armies across challenging terrains. The trail leading to Machu Picchu was likely used by Incan nobility and priests, serving as a sacred path to the citadel, which was an important religious and ceremonial site. Today, hiking the Inca Trail offers a glimpse into the engineering skills and spiritual traditions of the Inca civilization.<br>
                    <br> For those wanting to reach Machu Picchu by foot, the most famous trail is the Inca Trail, which is the only route that brings you directly to the ancient ruins on foot. It’s an iconic trek that typically takes 4 to 5 days to complete, covering 42 kilometers. If you’re looking for the ultimate experience to immerse yourself fully in the history and landscape, the Inca Trail is an unforgettable journey.
                 </p>
             </div>
         </div>
     </main>
-    
-        <div class="box" style="background-color: #7d9b76;">
+    <section>
+        <div class="boxW">
             <header> 
                 <h1>Weather and customs</h1>
             </header>
@@ -256,15 +203,19 @@
             </p>
         </div>
 
-        <div class="boxmargin" style="background-color: #457d58; margin-top: 8%;">
+        <div class="boxmarginA">
             <header>
                     <h1>Additional trails</h1>
                 </header>
                 <p>
                     <br>
-                    In addition to the Inca trail, there are other incredible trekking options that lead to Machu Picchu, such as:<br>
-                    <br>Salkantay Trek: This alternative route takes 5 to 7 days and leads hikers past the towering, snow-capped Salkantay Mountain. Unlike the Inca Trail, this trek doesn’t require permits, so it’s ideal for last-minute travelers or those seeking a quieter experience.<br>
-                    <br>Lares Trek: The Lares Trek combines scenic landscapes with a cultural experience, offering hikers the chance to visit small Andean villages and interact with local communities. Although it doesn’t lead directly to Machu Picchu, many trekkers take a train to the site at the end of the hike. This trek is generally less challenging than the Inca trail and the Salkantay trail, making it suitable for beginners or those interested in a cultural adventure.
+                    In addition to the Inca trail, there are other incredible trekking options that lead to Machu Picchu, such as:
+                    <br>
+                    <br>
+                    Salkantay Trek: This alternative route takes 5 to 7 days and leads hikers past the towering, snow-capped Salkantay Mountain. Unlike the Inca Trail, this trek doesn’t require permits, so it’s ideal for last-minute travelers or those seeking a quieter experience.
+                    <br>
+                    <br>
+                    Lares Trek: The Lares Trek combines scenic landscapes with a cultural experience, offering hikers the chance to visit small Andean villages and interact with local communities. Although it doesn’t lead directly to Machu Picchu, many trekkers take a train to the site at the end of the hike. This trek is generally less challenging than the Inca trail and the Salkantay trail, making it suitable for beginners or those interested in a cultural adventure.
                 </p>
         </div>
 </section>

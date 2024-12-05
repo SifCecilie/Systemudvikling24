@@ -106,6 +106,8 @@ footer {
 
 #mainPic {
    height: 400px;
+   object-fit: cover;  
+   object-position: 100% 100%;
 }
 
 /*Headers and other*/
