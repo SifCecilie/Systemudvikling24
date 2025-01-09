@@ -57,31 +57,6 @@ a:hover {
    color: rgb(250, 246, 222);
 }
 
-/*den store header på tips and tricks siden*/ 
-   #tipsheader {
-      margin: -240px 0 120px 0;
-      text-align: center;
-      font-size: 70px;
-      color: rgba(230, 227, 227, 0.856);
-      font-weight: lighter;
-   }
-
-/*h2 header på tips and tricks*/
-   #tipsh2{
-      margin: -130px 0 120px 0; 
-      text-align: center; 
-      font-size: 30px; 
-      color: rgba(255, 255, 255, 0.856); 
-      font-weight: lighter;
-   }
-
-   #besttipsHeader {
-      padding-top: 2%; 
-      padding-bottom:4%; 
-      margin-top: 2%; 
-      font-size: 140%;
-   }
-
 /* Bunden af dokumentet */
 footer {
    background-color: #272727;
@@ -181,37 +156,6 @@ ol{
    list-style-position: inside; /*makes sure the numbered lists left margin is even*/
 }
 
-
-/*som udgangspunkt er brødteksten skjult*/
-/* aside h2+* {
-   display: none;
-   text-align: center;
-}
-
-main h5 {
-   font-weight: lighter;
-   letter-spacing: 3px;
-} */
-
-
-/*Hvis skærmen er mindre en 800px, så bliver baggrundsfarven gul*/
-
-@media screen and (max-width:1230px) {
-   nav {
-      width: 100%;
-   }
-
-   h1 {
-      font-size: 3vw;
-   }
-   h2 {
-      font-size: 1.7vw;
-   }
-   h3 {
-      font-size: 1.5vw;
-   }
-}
-
 @media screen and (max-width:1115px) {
    #mainPic {
       height: 350px;
@@ -225,6 +169,9 @@ main h5 {
   #pbanner{
       font-size: 18px;
       margin: -190px 0 70px 0;
+  }
+  h1 {
+   font-size: 3vw;
   }
 }
 
